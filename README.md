@@ -223,6 +223,17 @@ take longer. Ambiguous matches are rejected. Unknown/blank/low-confidence reads
 break a pending confirmation streak and keep the previous confirmed scene and
 its ambience. Moving between subzones of the same parent does not restart it.
 
+Clipped minimap labels also support conservative prefix matching. For example,
+`Stranglethorn...` can resolve to Stranglethorn Vale, including small OCR errors
+in the visible prefix. By default at least eight normalized characters and half
+the name must be visible, with 90% prefix similarity. Shared prefixes such as
+`Scarlet Monastery` cannot select a wing and are rejected. Candidates for different
+parents still need the configured score margin, OCR confidence and three-read
+confirmation. Debug matches include `match_method: prefix` when this is used.
+Tune `minimum_prefix_characters`, `minimum_prefix_fraction`, and
+`minimum_prefix_similarity` in `config/ocr.yaml`. This supports right-truncated
+names; text missing its beginning is not treated as a prefix.
+
 `config/location_aliases.yaml` maps labels such as Goldshire → Elwynn Forest and
 Trade District → Stormwind City. Parents must have an existing profile; conflicting
 aliases fail validation. The initial catalog also includes The Deadmines and

@@ -96,6 +96,46 @@ def test_alias_validation(matcher):
         matcher.add("Goldshire", "duskwood")
 
 
+@pytest.mark.parametrize(
+    "text,profile",
+    [
+        ("Stranglethorn...", "stranglethorn_vale"),
+        ("Strangleth0rn…", "stranglethorn_vale"),
+        ("The Slaughter", "stormwind"),
+        ("Northshire Val", "elwynn_forest"),
+    ],
+)
+def test_clipped_labels(matcher, text, profile):
+    match = matcher.match(text, 0.95)
+    assert match is not None
+    assert match.profile == profile
+
+
+@pytest.mark.parametrize("text", ["Scarlet Monastery", "Dire Maul", "The", "Strang"])
+def test_short_or_ambiguous_prefix_rejected(matcher, text):
+    assert matcher.match(text, 0.95) is None
+
+
+def test_prefix_parent_ambiguity_beats_length_advantage(matcher):
+    matcher.add("Crystal Valley", "duskwood")
+    matcher.add("Crystal Valley Northern Outpost", "stormwind")
+    assert matcher.match("Crystal Valle", 0.95) is None
+
+
+def test_prefix_aliases_with_same_parent_are_safe(matcher):
+    matcher.add("Crystal Valley", "duskwood")
+    matcher.add("Crystal Vale", "duskwood")
+    assert matcher.match("Crystal Va", 0.95).profile == "duskwood"
+
+
+def test_prefix_still_requires_confidence_and_three_reads(matcher):
+    detector = Detector(matcher)
+    assert detector.observe("Stranglethorn...", 0.2) == (None, False)
+    assert not detector.observe("Stranglethorn...", 0.95)[1]
+    assert not detector.observe("Stranglethorn...", 0.95)[1]
+    assert detector.observe("Stranglethorn...", 0.95)[1]
+
+
 def test_roi_validation():
     roi = Calibration(left=100, top=20, width=200, height=30, client_width=1920, client_height=1080)
     assert roi.rectangle(1920, 1080) == (100, 20, 200, 30)

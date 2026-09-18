@@ -20,6 +20,9 @@ class OCRConfig(Model):
     minimum_ocr_confidence: float = Field(default=0.65, ge=0, le=1)
     minimum_match_score: float = Field(default=0.84, ge=0.5, le=1)
     ambiguity_margin: float = Field(default=0.08, ge=0, le=1)
+    minimum_prefix_characters: int = Field(default=8, ge=5, le=40)
+    minimum_prefix_fraction: float = Field(default=0.5, ge=0.25, le=1)
+    minimum_prefix_similarity: float = Field(default=0.9, ge=0.8, le=1)
 
 
 class Calibration(Model):
@@ -46,6 +49,7 @@ class Match:
     resolved_location: str
     confidence: float
     ocr_confidence: float
+    match_method: str = "full"
 
 
 class Matcher:
@@ -82,23 +86,41 @@ class Matcher:
         if text in self.names:
             display, key = self.names[text]
             return Match(raw, display, key, self.catalog.profiles[key].names[0], 1.0, confidence)
-        ranked = sorted(
-            (
-                (SequenceMatcher(None, text, name).ratio(), display, key)
-                for name, (display, key) in self.names.items()
-            ),
-            reverse=True,
-        )
+        # A shared literal prefix cannot identify a wing/zone even if one name
+        # happens to be shorter and therefore scores better as a whole string.
+        prefix_parents = {key for name, (_, key) in self.names.items() if name.startswith(text)}
+        if len(prefix_parents) > 1:
+            return None
+        ranked = []
+        for name, (display, key) in self.names.items():
+            score = SequenceMatcher(None, text, name).ratio()
+            method = "full"
+            if (
+                len(text) >= self.config.minimum_prefix_characters
+                and len(text) < len(name)
+                and len(text) / len(name) >= self.config.minimum_prefix_fraction
+            ):
+                similarity = SequenceMatcher(None, text, name[: len(text)]).ratio()
+                # Prefix-only evidence is discounted versus a complete label.
+                if (
+                    similarity >= self.config.minimum_prefix_similarity
+                    and similarity * 0.96 > score
+                ):
+                    score, method = similarity * 0.96, "prefix"
+            ranked.append((score, display, key, method))
+        ranked.sort(reverse=True)
         if not ranked:
             return None
-        score, display, key = ranked[0]
-        competitor = next((s for s, _, k in ranked if k != key), 0)
+        score, display, key, method = ranked[0]
+        competitor = next((s for s, _, k, _ in ranked if k != key), 0)
         if (
             score < self.config.minimum_match_score
             or score - competitor < self.config.ambiguity_margin
         ):
             return None
-        return Match(raw, display, key, self.catalog.profiles[key].names[0], score, confidence)
+        return Match(
+            raw, display, key, self.catalog.profiles[key].names[0], score, confidence, method
+        )
 
 
 class Detector:

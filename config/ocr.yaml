@@ -6,3 +6,7 @@ consecutive_reads: 3
 minimum_ocr_confidence: 0.65
 minimum_match_score: 0.84
 ambiguity_margin: 0.08
+# Clipped labels must retain enough distinctive text; shared prefixes are rejected.
+minimum_prefix_characters: 8
+minimum_prefix_fraction: 0.5
+minimum_prefix_similarity: 0.9
