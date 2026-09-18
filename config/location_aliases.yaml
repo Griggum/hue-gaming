@@ -1,0 +1,15 @@
+location_aliases:
+  Goldshire: {parent: Elwynn Forest}
+  Northshire Valley: {parent: Elwynn Forest}
+  Northshire Abbey: {parent: Elwynn Forest}
+  Trade District: {parent: Stormwind City}
+  Old Town: {parent: Stormwind City}
+  The Slaughtered Lamb: {parent: Stormwind City}
+  Mage Quarter: {parent: Stormwind City}
+  Cathedral Square: {parent: Stormwind City}
+  Dwarven District: {parent: Stormwind City}
+  The Canals: {parent: Stormwind City}
+  Stormwind: {parent: Stormwind City}
+  Sentinel Hill: {parent: Westfall}
+  Darkshire: {parent: Duskwood}
+  Raven Hill: {parent: Duskwood}

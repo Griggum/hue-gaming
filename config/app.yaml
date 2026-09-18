@@ -1,0 +1,19 @@
+# Paths are resolved relative to this file.
+profiles: profiles.yaml
+lighting:
+  brightness: 1.0
+  intensity: 1.0
+  speed: 1.0
+  # Optional per-position trim, multiplied by master brightness.
+  channel_brightness: {}
+lights: lights.yaml
+env_file: ../.env
+log_file: ../logs/wow-hue.log
+bridge:
+  host: null
+  # A custom CA bundle is supported. Local Hue certificates usually require
+  # explicit --insecure until a trusted certificate is configured.
+  ca_file: null
+  request_interval_seconds: 0.25
+  timeout_seconds: 5
+  max_retry_seconds: 30

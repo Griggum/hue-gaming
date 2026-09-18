@@ -1,0 +1,4200 @@
+# Editable palettes. New profiles interpret the artistic directions in the spec.
+# Existing palettes retained; Onyxia uses the explicit spec values.
+locations:
+  stormwind:
+    names:
+    - Stormwind City
+    type: city
+    motion: subtle
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#3F608F'
+        - '#4D719A'
+        brightness:
+        - 35
+        - 42
+      rectangle_front_right:
+        palette:
+        - '#48698C'
+        - '#54769B'
+        brightness:
+        - 34
+        - 41
+      rectangle_rear_left:
+        palette:
+        - '#D5AE62'
+        - '#E0BC76'
+        brightness:
+        - 30
+        - 37
+      rectangle_rear_right:
+        palette:
+        - '#D8C296'
+        - '#E3CEAC'
+        brightness:
+        - 28
+        - 35
+      bedside:
+        palette:
+        - '#B58B4D'
+        - '#C59C5A'
+        brightness:
+        - 14
+        - 20
+  deadmines:
+    names:
+    - The Deadmines
+    - Deadmines
+    type: dungeon
+    motion: ambient
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#997244'
+        - '#A47F50'
+        brightness:
+        - 26
+        - 32
+      rectangle_front_right:
+        palette:
+        - '#80613E'
+        - '#8E7049'
+        brightness:
+        - 24
+        - 30
+      rectangle_rear_left:
+        palette:
+        - '#BC883E'
+        - '#CA984A'
+        brightness:
+        - 25
+        - 32
+      rectangle_rear_right:
+        palette:
+        - '#435C63'
+        - '#4E686E'
+        brightness:
+        - 20
+        - 26
+      bedside:
+        palette:
+        - '#5F422B'
+        - '#704F30'
+        brightness:
+        - 10
+        - 15
+  alterac_valley:
+    names:
+    - Alterac Valley
+    type: battleground
+    motion: subtle
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#91B9D2'
+        - '#A2C6D9'
+        brightness:
+        - 42
+        - 49
+      rectangle_front_right:
+        palette:
+        - '#A9C3D2'
+        - '#B9CED9'
+        brightness:
+        - 40
+        - 47
+      rectangle_rear_left:
+        palette:
+        - '#658BAE'
+        - '#759BBA'
+        brightness:
+        - 30
+        - 36
+      rectangle_rear_right:
+        palette:
+        - '#88676D'
+        - '#957179'
+        brightness:
+        - 23
+        - 29
+      bedside:
+        palette:
+        - '#50677E'
+        - '#607991'
+        brightness:
+        - 14
+        - 20
+    effect: snow
+  elwynn_forest:
+    names:
+    - Elwynn Forest
+    motion: ambient
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#4F8A3C'
+        - '#5A9444'
+        brightness:
+        - 40
+        - 47
+      rectangle_front_right:
+        palette:
+        - '#4A8138'
+        - '#568D42'
+        brightness:
+        - 39
+        - 46
+      rectangle_rear_left:
+        palette:
+        - '#E6B85C'
+        - '#DDAA4D'
+        brightness:
+        - 30
+        - 38
+      rectangle_rear_right:
+        palette:
+        - '#C89545'
+        - '#D5A34E'
+        brightness:
+        - 28
+        - 36
+      bedside:
+        palette:
+        - '#A86C2D'
+        - '#8F5C29'
+        brightness:
+        - 12
+        - 19
+    effect: forest
+  westfall:
+    names:
+    - Westfall
+    motion: subtle
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#D6AE57'
+        - '#E0BA68'
+        brightness:
+        - 42
+        - 48
+      rectangle_front_right:
+        palette:
+        - '#CBA04B'
+        - '#D8B15F'
+        brightness:
+        - 41
+        - 47
+      rectangle_rear_left:
+        palette:
+        - '#BB7C43'
+        - '#C98C4D'
+        brightness:
+        - 30
+        - 36
+      rectangle_rear_right:
+        palette:
+        - '#C38B48'
+        - '#D29C56'
+        brightness:
+        - 29
+        - 35
+      bedside:
+        palette:
+        - '#9B602C'
+        - '#AD7134'
+        brightness:
+        - 14
+        - 20
+  duskwood:
+    names:
+    - Duskwood
+    motion: ambient
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#2A1C42'
+        - '#34234E'
+        brightness:
+        - 20
+        - 27
+      rectangle_front_right:
+        palette:
+        - '#334C62'
+        - '#3B566C'
+        brightness:
+        - 18
+        - 25
+      rectangle_rear_left:
+        palette:
+        - '#423056'
+        - '#4B3861'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#28424F'
+        - '#304A58'
+        brightness:
+        - 16
+        - 22
+      bedside:
+        palette:
+        - '#23142D'
+        - '#2B1835'
+        brightness:
+        - 8
+        - 14
+    effect: haunted
+  stranglethorn_vale:
+    names:
+    - Stranglethorn Vale
+    motion: ambient
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#17683A'
+        - '#205F35'
+        - '#286E3C'
+        brightness:
+        - 36
+        - 43
+      rectangle_front_right:
+        palette:
+        - '#16623B'
+        - '#287746'
+        brightness:
+        - 32
+        - 40
+      rectangle_rear_left:
+        palette:
+        - '#A86D2B'
+        - '#BD792D'
+        brightness:
+        - 25
+        - 34
+      rectangle_rear_right:
+        palette:
+        - '#8E612B'
+        - '#B17A32'
+        brightness:
+        - 23
+        - 31
+      bedside:
+        palette:
+        - '#103C29'
+        - '#173F2D'
+        brightness:
+        - 12
+        - 18
+    effect: forest
+  onyxias_lair:
+    names:
+    - Onyxia's Lair
+    type: raid
+    motion: active
+    transition_seconds: 2
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#A9231D'
+        - '#B72B20'
+        brightness:
+        - 24
+        - 31
+      rectangle_front_right:
+        palette:
+        - '#E0631E'
+        - '#CF521B'
+        brightness:
+        - 29
+        - 37
+      rectangle_rear_left:
+        palette:
+        - '#771A17'
+        - '#8A211A'
+        brightness:
+        - 20
+        - 28
+      rectangle_rear_right:
+        palette:
+        - '#B7421C'
+        - '#C34D1D'
+        brightness:
+        - 24
+        - 33
+      bedside:
+        palette:
+        - '#481315'
+        - '#561517'
+        brightness:
+        - 9
+        - 15
+    effect: embers
+  neutral:
+    names:
+    - Neutral
+    type: neutral
+    motion: static
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#E3CBA4'
+        brightness:
+        - 30
+        - 30
+      rectangle_front_right:
+        palette:
+        - '#E3CBA4'
+        brightness:
+        - 30
+        - 30
+      rectangle_rear_left:
+        palette:
+        - '#D8BC90'
+        brightness:
+        - 25
+        - 25
+      rectangle_rear_right:
+        palette:
+        - '#D8BC90'
+        brightness:
+        - 25
+        - 25
+      bedside:
+        palette:
+        - '#C9A374'
+        brightness:
+        - 15
+        - 15
+  redridge_mountains:
+    names:
+    - Redridge Mountains
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#86513D'
+        - '#8F5A46'
+        brightness:
+        - 37
+        - 43
+      rectangle_front_right:
+        palette:
+        - '#86513D'
+        - '#8F5A46'
+        brightness:
+        - 35
+        - 41
+      rectangle_rear_left:
+        palette:
+        - '#467048'
+        - '#4F7951'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_right:
+        palette:
+        - '#467048'
+        - '#4F7951'
+        brightness:
+        - 26
+        - 32
+      bedside:
+        palette:
+        - '#B18A4A'
+        - '#BA9353'
+        brightness:
+        - 13
+        - 19
+  deadwind_pass:
+    names:
+    - Deadwind Pass
+    type: zone
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#362940'
+        - '#3F3249'
+        brightness:
+        - 12
+        - 18
+      rectangle_front_right:
+        palette:
+        - '#362940'
+        - '#3F3249'
+        brightness:
+        - 11
+        - 17
+      rectangle_rear_left:
+        palette:
+        - '#672D37'
+        - '#703640'
+        brightness:
+        - 9
+        - 15
+      rectangle_rear_right:
+        palette:
+        - '#672D37'
+        - '#703640'
+        brightness:
+        - 8
+        - 14
+      bedside:
+        palette:
+        - '#241C33'
+        - '#2D253C'
+        brightness:
+        - 3
+        - 9
+  swamp_of_sorrows:
+    names:
+    - Swamp of Sorrows
+    type: zone
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#365D57'
+        - '#3F6660'
+        brightness:
+        - 22
+        - 28
+      rectangle_front_right:
+        palette:
+        - '#365D57'
+        - '#3F6660'
+        brightness:
+        - 21
+        - 27
+      rectangle_rear_left:
+        palette:
+        - '#54613D'
+        - '#5D6A46'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#54613D'
+        - '#5D6A46'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#423B51'
+        - '#4B445A'
+        brightness:
+        - 7
+        - 13
+  blasted_lands:
+    names:
+    - Blasted Lands
+    type: zone
+    motion: active
+    effect: embers
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#8F392C'
+        - '#984235'
+        brightness:
+        - 31
+        - 39
+      rectangle_front_right:
+        palette:
+        - '#8F392C'
+        - '#984235'
+        brightness:
+        - 30
+        - 38
+      rectangle_rear_left:
+        palette:
+        - '#B65E30'
+        - '#BF6739'
+        brightness:
+        - 23
+        - 31
+      rectangle_rear_right:
+        palette:
+        - '#B65E30'
+        - '#BF6739'
+        brightness:
+        - 22
+        - 30
+      bedside:
+        palette:
+        - '#602A2C'
+        - '#693335'
+        brightness:
+        - 10
+        - 18
+  burning_steppes:
+    names:
+    - Burning Steppes
+    type: zone
+    motion: active
+    effect: embers
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#C05B2A'
+        - '#C96433'
+        brightness:
+        - 31
+        - 39
+      rectangle_front_right:
+        palette:
+        - '#C05B2A'
+        - '#C96433'
+        brightness:
+        - 30
+        - 38
+      rectangle_rear_left:
+        palette:
+        - '#8D3028'
+        - '#963931'
+        brightness:
+        - 23
+        - 31
+      rectangle_rear_right:
+        palette:
+        - '#8D3028'
+        - '#963931'
+        brightness:
+        - 22
+        - 30
+      bedside:
+        palette:
+        - '#582824'
+        - '#61312D'
+        brightness:
+        - 10
+        - 18
+  searing_gorge:
+    names:
+    - Searing Gorge
+    type: zone
+    motion: active
+    effect: embers
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#C4662C'
+        - '#CD6F35'
+        brightness:
+        - 28
+        - 36
+      rectangle_front_right:
+        palette:
+        - '#C4662C'
+        - '#CD6F35'
+        brightness:
+        - 27
+        - 35
+      rectangle_rear_left:
+        palette:
+        - '#792D27'
+        - '#823630'
+        brightness:
+        - 21
+        - 29
+      rectangle_rear_right:
+        palette:
+        - '#792D27'
+        - '#823630'
+        brightness:
+        - 19
+        - 27
+      bedside:
+        palette:
+        - '#8D592A'
+        - '#966233'
+        brightness:
+        - 9
+        - 17
+  badlands:
+    names:
+    - Badlands
+    type: zone
+    motion: static
+    effect: default
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#BD925A'
+        - '#C69B63'
+        brightness:
+        - 37
+        - 43
+      rectangle_front_right:
+        palette:
+        - '#BD925A'
+        - '#C69B63'
+        brightness:
+        - 35
+        - 41
+      rectangle_rear_left:
+        palette:
+        - '#A98846'
+        - '#B2914F'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_right:
+        palette:
+        - '#A98846'
+        - '#B2914F'
+        brightness:
+        - 26
+        - 32
+      bedside:
+        palette:
+        - '#624A32'
+        - '#6B533B'
+        brightness:
+        - 13
+        - 19
+  loch_modan:
+    names:
+    - Loch Modan
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#528154'
+        - '#5B8A5D'
+        brightness:
+        - 37
+        - 43
+      rectangle_front_right:
+        palette:
+        - '#528154'
+        - '#5B8A5D'
+        brightness:
+        - 35
+        - 41
+      rectangle_rear_left:
+        palette:
+        - '#567F99'
+        - '#5F88A2'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_right:
+        palette:
+        - '#567F99'
+        - '#5F88A2'
+        brightness:
+        - 26
+        - 32
+      bedside:
+        palette:
+        - '#A08A65'
+        - '#A9936E'
+        brightness:
+        - 13
+        - 19
+  dun_morogh:
+    names:
+    - Dun Morogh
+    type: zone
+    motion: subtle
+    effect: snow
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#ACC8D8'
+        - '#B5D1E1'
+        brightness:
+        - 46
+        - 50
+      rectangle_front_right:
+        palette:
+        - '#ACC8D8'
+        - '#B5D1E1'
+        brightness:
+        - 44
+        - 48
+      rectangle_rear_left:
+        palette:
+        - '#7099BA'
+        - '#79A2C3'
+        brightness:
+        - 35
+        - 39
+      rectangle_rear_right:
+        palette:
+        - '#7099BA'
+        - '#79A2C3'
+        brightness:
+        - 33
+        - 37
+      bedside:
+        palette:
+        - '#CBB488'
+        - '#D4BD91'
+        brightness:
+        - 17
+        - 21
+  wetlands:
+    names:
+    - Wetlands
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#547F91'
+        - '#5D889A'
+        brightness:
+        - 29
+        - 35
+      rectangle_front_right:
+        palette:
+        - '#547F91'
+        - '#5D889A'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_left:
+        palette:
+        - '#53714E'
+        - '#5C7A57'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_right:
+        palette:
+        - '#53714E'
+        - '#5C7A57'
+        brightness:
+        - 20
+        - 26
+      bedside:
+        palette:
+        - '#927343'
+        - '#9B7C4C'
+        brightness:
+        - 10
+        - 16
+  arathi_highlands:
+    names:
+    - Arathi Highlands
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#64874B'
+        - '#6D9054'
+        brightness:
+        - 39
+        - 45
+      rectangle_front_right:
+        palette:
+        - '#64874B'
+        - '#6D9054'
+        brightness:
+        - 37
+        - 43
+      rectangle_rear_left:
+        palette:
+        - '#B49B53'
+        - '#BDA45C'
+        brightness:
+        - 30
+        - 36
+      rectangle_rear_right:
+        palette:
+        - '#B49B53'
+        - '#BDA45C'
+        brightness:
+        - 28
+        - 34
+      bedside:
+        palette:
+        - '#8E5650'
+        - '#975F59'
+        brightness:
+        - 14
+        - 20
+  hillsbrad_foothills:
+    names:
+    - Hillsbrad Foothills
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#719454'
+        - '#7A9D5D'
+        brightness:
+        - 41
+        - 47
+      rectangle_front_right:
+        palette:
+        - '#719454'
+        - '#7A9D5D'
+        brightness:
+        - 39
+        - 45
+      rectangle_rear_left:
+        palette:
+        - '#C5AC69'
+        - '#CEB572'
+        brightness:
+        - 31
+        - 37
+      rectangle_rear_right:
+        palette:
+        - '#C5AC69'
+        - '#CEB572'
+        brightness:
+        - 29
+        - 35
+      bedside:
+        palette:
+        - '#A18149'
+        - '#AA8A52'
+        brightness:
+        - 15
+        - 21
+  alterac_mountains:
+    names:
+    - Alterac Mountains
+    type: zone
+    motion: subtle
+    effect: snow
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#8AADC7'
+        - '#93B6D0'
+        brightness:
+        - 41
+        - 45
+      rectangle_front_right:
+        palette:
+        - '#8AADC7'
+        - '#93B6D0'
+        brightness:
+        - 39
+        - 43
+      rectangle_rear_left:
+        palette:
+        - '#807C9A'
+        - '#8985A3'
+        brightness:
+        - 32
+        - 36
+      rectangle_rear_right:
+        palette:
+        - '#807C9A'
+        - '#8985A3'
+        brightness:
+        - 29
+        - 33
+      bedside:
+        palette:
+        - '#BAC9D1'
+        - '#C3D2DA'
+        brightness:
+        - 15
+        - 19
+  silverpine_forest:
+    names:
+    - Silverpine Forest
+    type: zone
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#3B587A'
+        - '#446183'
+        brightness:
+        - 22
+        - 28
+      rectangle_front_right:
+        palette:
+        - '#3B587A'
+        - '#446183'
+        brightness:
+        - 21
+        - 27
+      rectangle_rear_left:
+        palette:
+        - '#504466'
+        - '#594D6F'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#504466'
+        - '#594D6F'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#305459'
+        - '#395D62'
+        brightness:
+        - 7
+        - 13
+  tirisfal_glades:
+    names:
+    - Tirisfal Glades
+    type: zone
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#51603A'
+        - '#5A6943'
+        brightness:
+        - 20
+        - 26
+      rectangle_front_right:
+        palette:
+        - '#51603A'
+        - '#5A6943'
+        brightness:
+        - 19
+        - 25
+      rectangle_rear_left:
+        palette:
+        - '#544061'
+        - '#5D496A'
+        brightness:
+        - 15
+        - 21
+      rectangle_rear_right:
+        palette:
+        - '#544061'
+        - '#5D496A'
+        brightness:
+        - 14
+        - 20
+      bedside:
+        palette:
+        - '#303F38'
+        - '#394841'
+        brightness:
+        - 6
+        - 12
+  western_plaguelands:
+    names:
+    - Western Plaguelands
+    type: zone
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#9B9445'
+        - '#A49D4E'
+        brightness:
+        - 27
+        - 33
+      rectangle_front_right:
+        palette:
+        - '#9B9445'
+        - '#A49D4E'
+        brightness:
+        - 26
+        - 32
+      rectangle_rear_left:
+        palette:
+        - '#687043'
+        - '#71794C'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#687043'
+        - '#71794C'
+        brightness:
+        - 19
+        - 25
+      bedside:
+        palette:
+        - '#76483B'
+        - '#7F5144'
+        brightness:
+        - 9
+        - 15
+  eastern_plaguelands:
+    names:
+    - Eastern Plaguelands
+    type: zone
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#A69C3A'
+        - '#AFA543'
+        brightness:
+        - 25
+        - 31
+      rectangle_front_right:
+        palette:
+        - '#A69C3A'
+        - '#AFA543'
+        brightness:
+        - 24
+        - 30
+      rectangle_rear_left:
+        palette:
+        - '#657D3E'
+        - '#6E8647'
+        brightness:
+        - 19
+        - 25
+      rectangle_rear_right:
+        palette:
+        - '#657D3E'
+        - '#6E8647'
+        brightness:
+        - 17
+        - 23
+      bedside:
+        palette:
+        - '#805B2F'
+        - '#896438'
+        brightness:
+        - 8
+        - 14
+  the_hinterlands:
+    names:
+    - The Hinterlands
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#3F704E'
+        - '#487957'
+        brightness:
+        - 33
+        - 39
+      rectangle_front_right:
+        palette:
+        - '#3F704E'
+        - '#487957'
+        brightness:
+        - 32
+        - 38
+      rectangle_rear_left:
+        palette:
+        - '#A18F50'
+        - '#AA9859'
+        brightness:
+        - 25
+        - 31
+      rectangle_rear_right:
+        palette:
+        - '#A18F50'
+        - '#AA9859'
+        brightness:
+        - 23
+        - 29
+      bedside:
+        palette:
+        - '#294A3C'
+        - '#325345'
+        brightness:
+        - 11
+        - 17
+  riverglades:
+    names:
+    - Riverglades
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#769650'
+        - '#7F9F59'
+        brightness:
+        - 40
+        - 46
+      rectangle_front_right:
+        palette:
+        - '#769650'
+        - '#7F9F59'
+        brightness:
+        - 38
+        - 44
+      rectangle_rear_left:
+        palette:
+        - '#C8A457'
+        - '#D1AD60'
+        brightness:
+        - 31
+        - 37
+      rectangle_rear_right:
+        palette:
+        - '#C8A457'
+        - '#D1AD60'
+        brightness:
+        - 28
+        - 34
+      bedside:
+        palette:
+        - '#B47747'
+        - '#BD8050'
+        brightness:
+        - 14
+        - 20
+  durotar:
+    names:
+    - Durotar
+    type: zone
+    motion: static
+    effect: default
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B77647'
+        - '#C07F50'
+        brightness:
+        - 39
+        - 45
+      rectangle_front_right:
+        palette:
+        - '#B77647'
+        - '#C07F50'
+        brightness:
+        - 37
+        - 43
+      rectangle_rear_left:
+        palette:
+        - '#9F5441'
+        - '#A85D4A'
+        brightness:
+        - 30
+        - 36
+      rectangle_rear_right:
+        palette:
+        - '#9F5441'
+        - '#A85D4A'
+        brightness:
+        - 28
+        - 34
+      bedside:
+        palette:
+        - '#C89245'
+        - '#D19B4E'
+        brightness:
+        - 14
+        - 20
+  the_barrens:
+    names:
+    - The Barrens
+    type: zone
+    motion: static
+    effect: default
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#BDA554'
+        - '#C6AE5D'
+        brightness:
+        - 42
+        - 48
+      rectangle_front_right:
+        palette:
+        - '#BDA554'
+        - '#C6AE5D'
+        brightness:
+        - 40
+        - 46
+      rectangle_rear_left:
+        palette:
+        - '#82864D'
+        - '#8B8F56'
+        brightness:
+        - 32
+        - 38
+      rectangle_rear_right:
+        palette:
+        - '#82864D'
+        - '#8B8F56'
+        brightness:
+        - 30
+        - 36
+      bedside:
+        palette:
+        - '#BD8847'
+        - '#C69150'
+        brightness:
+        - 15
+        - 21
+  mulgore:
+    names:
+    - Mulgore
+    type: zone
+    motion: static
+    effect: default
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#719453'
+        - '#7A9D5C'
+        brightness:
+        - 41
+        - 47
+      rectangle_front_right:
+        palette:
+        - '#719453'
+        - '#7A9D5C'
+        brightness:
+        - 39
+        - 45
+      rectangle_rear_left:
+        palette:
+        - '#7199AE'
+        - '#7AA2B7'
+        brightness:
+        - 31
+        - 37
+      rectangle_rear_right:
+        palette:
+        - '#7199AE'
+        - '#7AA2B7'
+        brightness:
+        - 29
+        - 35
+      bedside:
+        palette:
+        - '#C0A05A'
+        - '#C9A963'
+        brightness:
+        - 15
+        - 21
+  stonetalon_mountains:
+    names:
+    - Stonetalon Mountains
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#466C49'
+        - '#4F7552'
+        brightness:
+        - 32
+        - 38
+      rectangle_front_right:
+        palette:
+        - '#466C49'
+        - '#4F7552'
+        brightness:
+        - 31
+        - 37
+      rectangle_rear_left:
+        palette:
+        - '#5C7587'
+        - '#657E90'
+        brightness:
+        - 24
+        - 30
+      rectangle_rear_right:
+        palette:
+        - '#5C7587'
+        - '#657E90'
+        brightness:
+        - 23
+        - 29
+      bedside:
+        palette:
+        - '#9A7645'
+        - '#A37F4E'
+        brightness:
+        - 11
+        - 17
+  ashenvale:
+    names:
+    - Ashenvale
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#285B46'
+        - '#31644F'
+        brightness:
+        - 29
+        - 35
+      rectangle_front_right:
+        palette:
+        - '#285B46'
+        - '#31644F'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_left:
+        palette:
+        - '#494774'
+        - '#52507D'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_right:
+        palette:
+        - '#494774'
+        - '#52507D'
+        brightness:
+        - 20
+        - 26
+      bedside:
+        palette:
+        - '#354C69'
+        - '#3E5572'
+        brightness:
+        - 10
+        - 16
+  darkshore:
+    names:
+    - Darkshore
+    type: zone
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#466782'
+        - '#4F708B'
+        brightness:
+        - 27
+        - 33
+      rectangle_front_right:
+        palette:
+        - '#466782'
+        - '#4F708B'
+        brightness:
+        - 26
+        - 32
+      rectangle_rear_left:
+        palette:
+        - '#648991'
+        - '#6D929A'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#648991'
+        - '#6D929A'
+        brightness:
+        - 19
+        - 25
+      bedside:
+        palette:
+        - '#5F607C'
+        - '#686985'
+        brightness:
+        - 9
+        - 15
+  teldrassil:
+    names:
+    - Teldrassil
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#635082'
+        - '#6C598B'
+        brightness:
+        - 29
+        - 35
+      rectangle_front_right:
+        palette:
+        - '#635082'
+        - '#6C598B'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_left:
+        palette:
+        - '#49764E'
+        - '#527F57'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_right:
+        palette:
+        - '#49764E'
+        - '#527F57'
+        brightness:
+        - 20
+        - 26
+      bedside:
+        palette:
+        - '#6083A1'
+        - '#698CAA'
+        brightness:
+        - 10
+        - 16
+  azshara:
+    names:
+    - Azshara
+    type: zone
+    motion: active
+    effect: arcane
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B17B43'
+        - '#BA844C'
+        brightness:
+        - 34
+        - 40
+      rectangle_front_right:
+        palette:
+        - '#B17B43'
+        - '#BA844C'
+        brightness:
+        - 33
+        - 39
+      rectangle_rear_left:
+        palette:
+        - '#527FAD'
+        - '#5B88B6'
+        brightness:
+        - 26
+        - 32
+      rectangle_rear_right:
+        palette:
+        - '#527FAD'
+        - '#5B88B6'
+        brightness:
+        - 24
+        - 30
+      bedside:
+        palette:
+        - '#534267'
+        - '#5C4B70'
+        brightness:
+        - 12
+        - 18
+  felwood:
+    names:
+    - Felwood
+    type: zone
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#5D7F3D'
+        - '#668846'
+        brightness:
+        - 22
+        - 28
+      rectangle_front_right:
+        palette:
+        - '#5D7F3D'
+        - '#668846'
+        brightness:
+        - 21
+        - 27
+      rectangle_rear_left:
+        palette:
+        - '#624571'
+        - '#6B4E7A'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#624571'
+        - '#6B4E7A'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#293D30'
+        - '#324639'
+        brightness:
+        - 7
+        - 13
+  winterspring:
+    names:
+    - Winterspring
+    type: zone
+    motion: subtle
+    effect: snow
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#91C8D3'
+        - '#9AD1DC'
+        brightness:
+        - 48
+        - 52
+      rectangle_front_right:
+        palette:
+        - '#91C8D3'
+        - '#9AD1DC'
+        brightness:
+        - 46
+        - 50
+      rectangle_rear_left:
+        palette:
+        - '#779FCD'
+        - '#80A8D6'
+        brightness:
+        - 37
+        - 41
+      rectangle_rear_right:
+        palette:
+        - '#779FCD'
+        - '#80A8D6'
+        brightness:
+        - 34
+        - 38
+      bedside:
+        palette:
+        - '#A99BBD'
+        - '#B2A4C6'
+        brightness:
+        - 18
+        - 22
+  moonglade:
+    names:
+    - Moonglade
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#4F7A63'
+        - '#58836C'
+        brightness:
+        - 27
+        - 33
+      rectangle_front_right:
+        palette:
+        - '#4F7A63'
+        - '#58836C'
+        brightness:
+        - 26
+        - 32
+      rectangle_rear_left:
+        palette:
+        - '#567A9D'
+        - '#5F83A6'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#567A9D'
+        - '#5F83A6'
+        brightness:
+        - 19
+        - 25
+      bedside:
+        palette:
+        - '#665482'
+        - '#6F5D8B'
+        brightness:
+        - 9
+        - 15
+  desolace:
+    names:
+    - Desolace
+    type: zone
+    motion: static
+    effect: default
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#82768A'
+        - '#8B7F93'
+        brightness:
+        - 27
+        - 33
+      rectangle_front_right:
+        palette:
+        - '#82768A'
+        - '#8B7F93'
+        brightness:
+        - 26
+        - 32
+      rectangle_rear_left:
+        palette:
+        - '#93816A'
+        - '#9C8A73'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#93816A'
+        - '#9C8A73'
+        brightness:
+        - 19
+        - 25
+      bedside:
+        palette:
+        - '#677F91'
+        - '#70889A'
+        brightness:
+        - 9
+        - 15
+  feralas:
+    names:
+    - Feralas
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#316F4F'
+        - '#3A7858'
+        brightness:
+        - 29
+        - 35
+      rectangle_front_right:
+        palette:
+        - '#316F4F'
+        - '#3A7858'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_left:
+        palette:
+        - '#3F7774'
+        - '#48807D'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_right:
+        palette:
+        - '#3F7774'
+        - '#48807D'
+        brightness:
+        - 20
+        - 26
+      bedside:
+        palette:
+        - '#5B4772'
+        - '#64507B'
+        brightness:
+        - 10
+        - 16
+  dustwallow_marsh:
+    names:
+    - Dustwallow Marsh
+    type: zone
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#3B6864'
+        - '#44716D'
+        brightness:
+        - 24
+        - 30
+      rectangle_front_right:
+        palette:
+        - '#3B6864'
+        - '#44716D'
+        brightness:
+        - 23
+        - 29
+      rectangle_rear_left:
+        palette:
+        - '#647049'
+        - '#6D7952'
+        brightness:
+        - 18
+        - 24
+      rectangle_rear_right:
+        palette:
+        - '#647049'
+        - '#6D7952'
+        brightness:
+        - 17
+        - 23
+      bedside:
+        palette:
+        - '#896632'
+        - '#926F3B'
+        brightness:
+        - 8
+        - 14
+  thousand_needles:
+    names:
+    - Thousand Needles
+    type: zone
+    motion: static
+    effect: default
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#BC8551'
+        - '#C58E5A'
+        brightness:
+        - 40
+        - 46
+      rectangle_front_right:
+        palette:
+        - '#BC8551'
+        - '#C58E5A'
+        brightness:
+        - 38
+        - 44
+      rectangle_rear_left:
+        palette:
+        - '#C2A45C'
+        - '#CBAD65'
+        brightness:
+        - 31
+        - 37
+      rectangle_rear_right:
+        palette:
+        - '#C2A45C'
+        - '#CBAD65'
+        brightness:
+        - 28
+        - 34
+      bedside:
+        palette:
+        - '#99594B'
+        - '#A26254'
+        brightness:
+        - 14
+        - 20
+  tanaris:
+    names:
+    - Tanaris
+    type: zone
+    motion: static
+    effect: default
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#CCAD61'
+        - '#D5B66A'
+        brightness:
+        - 45
+        - 51
+      rectangle_front_right:
+        palette:
+        - '#CCAD61'
+        - '#D5B66A'
+        brightness:
+        - 43
+        - 49
+      rectangle_rear_left:
+        palette:
+        - '#C78B4B'
+        - '#D09454'
+        brightness:
+        - 34
+        - 40
+      rectangle_rear_right:
+        palette:
+        - '#C78B4B'
+        - '#D09454'
+        brightness:
+        - 32
+        - 38
+      bedside:
+        palette:
+        - '#9B7036'
+        - '#A4793F'
+        brightness:
+        - 16
+        - 22
+  un_goro_crater:
+    names:
+    - Un'Goro Crater
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#3E874B'
+        - '#479054'
+        brightness:
+        - 35
+        - 41
+      rectangle_front_right:
+        palette:
+        - '#3E874B'
+        - '#479054'
+        brightness:
+        - 33
+        - 39
+      rectangle_rear_left:
+        palette:
+        - '#C47838'
+        - '#CD8141'
+        brightness:
+        - 27
+        - 33
+      rectangle_rear_right:
+        palette:
+        - '#C47838'
+        - '#CD8141'
+        brightness:
+        - 25
+        - 31
+      bedside:
+        palette:
+        - '#286148'
+        - '#316A51'
+        brightness:
+        - 12
+        - 18
+  silithus:
+    names:
+    - Silithus
+    type: zone
+    motion: static
+    effect: default
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B7A450'
+        - '#C0AD59'
+        brightness:
+        - 34
+        - 40
+      rectangle_front_right:
+        palette:
+        - '#B7A450'
+        - '#C0AD59'
+        brightness:
+        - 33
+        - 39
+      rectangle_rear_left:
+        palette:
+        - '#79587F'
+        - '#826188'
+        brightness:
+        - 26
+        - 32
+      rectangle_rear_right:
+        palette:
+        - '#79587F'
+        - '#826188'
+        brightness:
+        - 24
+        - 30
+      bedside:
+        palette:
+        - '#4D3C62'
+        - '#56456B'
+        brightness:
+        - 12
+        - 18
+  shen_dralas:
+    names:
+    - Shen'dralas
+    type: zone
+    motion: active
+    effect: arcane
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#7A5C9B'
+        - '#8365A4'
+        brightness:
+        - 32
+        - 38
+      rectangle_front_right:
+        palette:
+        - '#7A5C9B'
+        - '#8365A4'
+        brightness:
+        - 31
+        - 37
+      rectangle_rear_left:
+        palette:
+        - '#937651'
+        - '#9C7F5A'
+        brightness:
+        - 24
+        - 30
+      rectangle_rear_right:
+        palette:
+        - '#937651'
+        - '#9C7F5A'
+        brightness:
+        - 23
+        - 29
+      bedside:
+        palette:
+        - '#4C7BA9'
+        - '#5584B2'
+        brightness:
+        - 11
+        - 17
+  mount_hyjal:
+    names:
+    - Mount Hyjal
+    type: zone
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#427A50'
+        - '#4B8359'
+        brightness:
+        - 35
+        - 41
+      rectangle_front_right:
+        palette:
+        - '#427A50'
+        - '#4B8359'
+        brightness:
+        - 33
+        - 39
+      rectangle_rear_left:
+        palette:
+        - '#52789E'
+        - '#5B81A7'
+        brightness:
+        - 27
+        - 33
+      rectangle_rear_right:
+        palette:
+        - '#52789E'
+        - '#5B81A7'
+        brightness:
+        - 25
+        - 31
+      bedside:
+        palette:
+        - '#C2AD66'
+        - '#CBB66F'
+        brightness:
+        - 12
+        - 18
+  zephras_isle:
+    names:
+    - Zephras Isle
+    type: zone
+    motion: active
+    effect: arcane
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#78BECD'
+        - '#81C7D6'
+        brightness:
+        - 49
+        - 55
+      rectangle_front_right:
+        palette:
+        - '#78BECD'
+        - '#81C7D6'
+        brightness:
+        - 47
+        - 53
+      rectangle_rear_left:
+        palette:
+        - '#A594CA'
+        - '#AE9DD3'
+        brightness:
+        - 38
+        - 44
+      rectangle_rear_right:
+        palette:
+        - '#A594CA'
+        - '#AE9DD3'
+        brightness:
+        - 35
+        - 41
+      bedside:
+        palette:
+        - '#B2C6D5'
+        - '#BBCFDE'
+        brightness:
+        - 18
+        - 24
+  ironforge:
+    names:
+    - Ironforge
+    type: city
+    motion: active
+    effect: embers
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#BF6E35'
+        - '#C8773E'
+        brightness:
+        - 34
+        - 42
+      rectangle_front_right:
+        palette:
+        - '#BF6E35'
+        - '#C8773E'
+        brightness:
+        - 32
+        - 40
+      rectangle_rear_left:
+        palette:
+        - '#A18053'
+        - '#AA895C'
+        brightness:
+        - 26
+        - 34
+      rectangle_rear_right:
+        palette:
+        - '#A18053'
+        - '#AA895C'
+        brightness:
+        - 24
+        - 32
+      bedside:
+        palette:
+        - '#693C29'
+        - '#724532'
+        brightness:
+        - 11
+        - 19
+  darnassus:
+    names:
+    - Darnassus
+    type: city
+    motion: ambient
+    effect: forest
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#68558E'
+        - '#715E97'
+        brightness:
+        - 29
+        - 35
+      rectangle_front_right:
+        palette:
+        - '#68558E'
+        - '#715E97'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_left:
+        palette:
+        - '#59816A'
+        - '#628A73'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_right:
+        palette:
+        - '#59816A'
+        - '#628A73'
+        brightness:
+        - 20
+        - 26
+      bedside:
+        palette:
+        - '#6C8EAE'
+        - '#7597B7'
+        brightness:
+        - 10
+        - 16
+  orgrimmar:
+    names:
+    - Orgrimmar
+    type: city
+    motion: active
+    effect: embers
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#A84032'
+        - '#B1493B'
+        brightness:
+        - 32
+        - 40
+      rectangle_front_right:
+        palette:
+        - '#A84032'
+        - '#B1493B'
+        brightness:
+        - 31
+        - 39
+      rectangle_rear_left:
+        palette:
+        - '#C27A37'
+        - '#CB8340'
+        brightness:
+        - 24
+        - 32
+      rectangle_rear_right:
+        palette:
+        - '#C27A37'
+        - '#CB8340'
+        brightness:
+        - 22
+        - 30
+      bedside:
+        palette:
+        - '#6A2D29'
+        - '#733632'
+        brightness:
+        - 10
+        - 18
+  thunder_bluff:
+    names:
+    - Thunder Bluff
+    type: city
+    motion: subtle
+    effect: default
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B7A25C'
+        - '#C0AB65'
+        brightness:
+        - 39
+        - 45
+      rectangle_front_right:
+        palette:
+        - '#B7A25C'
+        - '#C0AB65'
+        brightness:
+        - 37
+        - 43
+      rectangle_rear_left:
+        palette:
+        - '#718952'
+        - '#7A925B'
+        brightness:
+        - 30
+        - 36
+      rectangle_rear_right:
+        palette:
+        - '#718952'
+        - '#7A925B'
+        brightness:
+        - 28
+        - 34
+      bedside:
+        palette:
+        - '#BA854D'
+        - '#C38E56'
+        brightness:
+        - 14
+        - 20
+  undercity:
+    names:
+    - Undercity
+    type: city
+    motion: ambient
+    effect: haunted
+    transition_seconds: 4
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#648045'
+        - '#6D894E'
+        brightness:
+        - 19
+        - 25
+      rectangle_front_right:
+        palette:
+        - '#648045'
+        - '#6D894E'
+        brightness:
+        - 18
+        - 24
+      rectangle_rear_left:
+        palette:
+        - '#624B78'
+        - '#6B5481'
+        brightness:
+        - 14
+        - 20
+      rectangle_rear_right:
+        palette:
+        - '#624B78'
+        - '#6B5481'
+        brightness:
+        - 13
+        - 19
+      bedside:
+        palette:
+        - '#304838'
+        - '#395141'
+        brightness:
+        - 6
+        - 12
+  ragefire_chasm:
+    names:
+    - Ragefire Chasm
+    type: dungeon
+    motion: active
+    effect: embers
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#C76529'
+        - '#D06E32'
+        brightness:
+        - 24
+        - 32
+      rectangle_front_right:
+        palette:
+        - '#C76529'
+        - '#D06E32'
+        brightness:
+        - 23
+        - 31
+      rectangle_rear_left:
+        palette:
+        - '#8E3026'
+        - '#97392F'
+        brightness:
+        - 18
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#8E3026'
+        - '#97392F'
+        brightness:
+        - 16
+        - 24
+      bedside:
+        palette:
+        - '#6B3D22'
+        - '#74462B'
+        brightness:
+        - 7
+        - 15
+  wailing_caverns:
+    names:
+    - Wailing Caverns
+    type: dungeon
+    motion: ambient
+    effect: forest
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#44704A'
+        - '#4D7953'
+        brightness:
+        - 23
+        - 29
+      rectangle_front_right:
+        palette:
+        - '#44704A'
+        - '#4D7953'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_left:
+        palette:
+        - '#3B797B'
+        - '#448284'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#3B797B'
+        - '#448284'
+        brightness:
+        - 16
+        - 22
+      bedside:
+        palette:
+        - '#2B4833'
+        - '#34513C'
+        brightness:
+        - 7
+        - 13
+  shadowfang_keep:
+    names:
+    - Shadowfang Keep
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#4D7399'
+        - '#567CA2'
+        brightness:
+        - 20
+        - 26
+      rectangle_front_right:
+        palette:
+        - '#4D7399'
+        - '#567CA2'
+        brightness:
+        - 19
+        - 25
+      rectangle_rear_left:
+        palette:
+        - '#6A5387'
+        - '#735C90'
+        brightness:
+        - 15
+        - 21
+      rectangle_rear_right:
+        palette:
+        - '#6A5387'
+        - '#735C90'
+        brightness:
+        - 14
+        - 20
+      bedside:
+        palette:
+        - '#342A4C'
+        - '#3D3355'
+        brightness:
+        - 6
+        - 12
+  blackfathom_deeps:
+    names:
+    - Blackfathom Deeps
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#345B7E'
+        - '#3D6487'
+        brightness:
+        - 21
+        - 27
+      rectangle_front_right:
+        palette:
+        - '#345B7E'
+        - '#3D6487'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_left:
+        palette:
+        - '#3A797C'
+        - '#438285'
+        brightness:
+        - 16
+        - 22
+      rectangle_rear_right:
+        palette:
+        - '#3A797C'
+        - '#438285'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#3D305A'
+        - '#463963'
+        brightness:
+        - 7
+        - 13
+  the_stockade:
+    names:
+    - The Stockade
+    type: dungeon
+    motion: subtle
+    effect: default
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B08A4B'
+        - '#B99354'
+        brightness:
+        - 23
+        - 29
+      rectangle_front_right:
+        palette:
+        - '#B08A4B'
+        - '#B99354'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_left:
+        palette:
+        - '#677D88'
+        - '#708691'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#677D88'
+        - '#708691'
+        brightness:
+        - 16
+        - 22
+      bedside:
+        palette:
+        - '#895C36'
+        - '#92653F'
+        brightness:
+        - 7
+        - 13
+  gnomeregan:
+    names:
+    - Gnomeregan
+    type: dungeon
+    motion: active
+    effect: arcane
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#50959E'
+        - '#599EA7'
+        brightness:
+        - 25
+        - 31
+      rectangle_front_right:
+        palette:
+        - '#50959E'
+        - '#599EA7'
+        brightness:
+        - 24
+        - 30
+      rectangle_rear_left:
+        palette:
+        - '#B97D3F'
+        - '#C28648'
+        brightness:
+        - 19
+        - 25
+      rectangle_rear_right:
+        palette:
+        - '#B97D3F'
+        - '#C28648'
+        brightness:
+        - 17
+        - 23
+      bedside:
+        palette:
+        - '#6D8C3B'
+        - '#769544'
+        brightness:
+        - 8
+        - 14
+  razorfen_kraul:
+    names:
+    - Razorfen Kraul
+    type: dungeon
+    motion: ambient
+    effect: forest
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#8D704D'
+        - '#967956'
+        brightness:
+        - 23
+        - 29
+      rectangle_front_right:
+        palette:
+        - '#8D704D'
+        - '#967956'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_left:
+        palette:
+        - '#576A3D'
+        - '#607346'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#576A3D'
+        - '#607346'
+        brightness:
+        - 16
+        - 22
+      bedside:
+        palette:
+        - '#9C6735'
+        - '#A5703E'
+        brightness:
+        - 7
+        - 13
+  razorfen_downs:
+    names:
+    - Razorfen Downs
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#6C4B7E'
+        - '#755487'
+        brightness:
+        - 19
+        - 25
+      rectangle_front_right:
+        palette:
+        - '#6C4B7E'
+        - '#755487'
+        brightness:
+        - 18
+        - 24
+      rectangle_rear_left:
+        palette:
+        - '#7D96AD'
+        - '#869FB6'
+        brightness:
+        - 14
+        - 20
+      rectangle_rear_right:
+        palette:
+        - '#7D96AD'
+        - '#869FB6'
+        brightness:
+        - 13
+        - 19
+      bedside:
+        palette:
+        - '#382846'
+        - '#41314F'
+        brightness:
+        - 6
+        - 12
+  scarlet_monastery_graveyard:
+    names:
+    - Scarlet Monastery — Graveyard
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#63517D'
+        - '#6C5A86'
+        brightness:
+        - 20
+        - 26
+      rectangle_front_right:
+        palette:
+        - '#63517D'
+        - '#6C5A86'
+        brightness:
+        - 19
+        - 25
+      rectangle_rear_left:
+        palette:
+        - '#55779B'
+        - '#5E80A4'
+        brightness:
+        - 15
+        - 21
+      rectangle_rear_right:
+        palette:
+        - '#55779B'
+        - '#5E80A4'
+        brightness:
+        - 14
+        - 20
+      bedside:
+        palette:
+        - '#8A3839'
+        - '#934142'
+        brightness:
+        - 6
+        - 12
+  scarlet_monastery_library:
+    names:
+    - Scarlet Monastery — Library
+    type: dungeon
+    motion: subtle
+    effect: default
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#A9403C'
+        - '#B24945'
+        brightness:
+        - 24
+        - 30
+      rectangle_front_right:
+        palette:
+        - '#A9403C'
+        - '#B24945'
+        brightness:
+        - 23
+        - 29
+      rectangle_rear_left:
+        palette:
+        - '#BD9859'
+        - '#C6A162'
+        brightness:
+        - 18
+        - 24
+      rectangle_rear_right:
+        palette:
+        - '#BD9859'
+        - '#C6A162'
+        brightness:
+        - 17
+        - 23
+      bedside:
+        palette:
+        - '#6B2E32'
+        - '#74373B'
+        brightness:
+        - 8
+        - 14
+  scarlet_monastery_armory:
+    names:
+    - Scarlet Monastery — Armory
+    type: dungeon
+    motion: active
+    effect: embers
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#9B393C'
+        - '#A44245'
+        brightness:
+        - 24
+        - 32
+      rectangle_front_right:
+        palette:
+        - '#9B393C'
+        - '#A44245'
+        brightness:
+        - 23
+        - 31
+      rectangle_rear_left:
+        palette:
+        - '#7F8793'
+        - '#88909C'
+        brightness:
+        - 18
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#7F8793'
+        - '#88909C'
+        brightness:
+        - 16
+        - 24
+      bedside:
+        palette:
+        - '#B9703C'
+        - '#C27945'
+        brightness:
+        - 7
+        - 15
+  scarlet_monastery_cathedral:
+    names:
+    - Scarlet Monastery — Cathedral
+    type: dungeon
+    motion: subtle
+    effect: default
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#A44243'
+        - '#AD4B4C'
+        brightness:
+        - 26
+        - 32
+      rectangle_front_right:
+        palette:
+        - '#A44243'
+        - '#AD4B4C'
+        brightness:
+        - 25
+        - 31
+      rectangle_rear_left:
+        palette:
+        - '#C6AC63'
+        - '#CFB56C'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#C6AC63'
+        - '#CFB56C'
+        brightness:
+        - 18
+        - 24
+      bedside:
+        palette:
+        - '#702C34'
+        - '#79353D'
+        brightness:
+        - 9
+        - 15
+  uldaman:
+    names:
+    - Uldaman
+    type: dungeon
+    motion: active
+    effect: arcane
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B39A59'
+        - '#BCA362'
+        brightness:
+        - 24
+        - 30
+      rectangle_front_right:
+        palette:
+        - '#B39A59'
+        - '#BCA362'
+        brightness:
+        - 23
+        - 29
+      rectangle_rear_left:
+        palette:
+        - '#678F97'
+        - '#7098A0'
+        brightness:
+        - 18
+        - 24
+      rectangle_rear_right:
+        palette:
+        - '#678F97'
+        - '#7098A0'
+        brightness:
+        - 17
+        - 23
+      bedside:
+        palette:
+        - '#786047'
+        - '#816950'
+        brightness:
+        - 8
+        - 14
+  zul_farrak:
+    names:
+    - Zul'Farrak
+    type: dungeon
+    motion: subtle
+    effect: default
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B79A4F'
+        - '#C0A358'
+        brightness:
+        - 26
+        - 32
+      rectangle_front_right:
+        palette:
+        - '#B79A4F'
+        - '#C0A358'
+        brightness:
+        - 25
+        - 31
+      rectangle_rear_left:
+        palette:
+        - '#62804A'
+        - '#6B8953'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#62804A'
+        - '#6B8953'
+        brightness:
+        - 18
+        - 24
+      bedside:
+        palette:
+        - '#AC633D'
+        - '#B56C46'
+        brightness:
+        - 9
+        - 15
+  maraudon:
+    names:
+    - Maraudon
+    type: dungeon
+    motion: ambient
+    effect: forest
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#4F794A'
+        - '#588253'
+        brightness:
+        - 22
+        - 28
+      rectangle_front_right:
+        palette:
+        - '#4F794A'
+        - '#588253'
+        brightness:
+        - 21
+        - 27
+      rectangle_rear_left:
+        palette:
+        - '#8766A0'
+        - '#906FA9'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#8766A0'
+        - '#906FA9'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#365B77'
+        - '#3F6480'
+        brightness:
+        - 7
+        - 13
+  temple_of_atal_hakkar:
+    names:
+    - Temple of Atal'Hakkar
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#4E693D'
+        - '#577246'
+        brightness:
+        - 20
+        - 26
+      rectangle_front_right:
+        palette:
+        - '#4E693D'
+        - '#577246'
+        brightness:
+        - 19
+        - 25
+      rectangle_rear_left:
+        palette:
+        - '#3E7770'
+        - '#478079'
+        brightness:
+        - 15
+        - 21
+      rectangle_rear_right:
+        palette:
+        - '#3E7770'
+        - '#478079'
+        brightness:
+        - 14
+        - 20
+      bedside:
+        palette:
+        - '#6A4B7B'
+        - '#735484'
+        brightness:
+        - 6
+        - 12
+  blackrock_depths:
+    names:
+    - Blackrock Depths
+    type: dungeon
+    motion: active
+    effect: embers
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#C17435'
+        - '#CA7D3E'
+        brightness:
+        - 24
+        - 32
+      rectangle_front_right:
+        palette:
+        - '#C17435'
+        - '#CA7D3E'
+        brightness:
+        - 23
+        - 31
+      rectangle_rear_left:
+        palette:
+        - '#8F4435'
+        - '#984D3E'
+        brightness:
+        - 18
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#8F4435'
+        - '#984D3E'
+        brightness:
+        - 16
+        - 24
+      bedside:
+        palette:
+        - '#5E2C29'
+        - '#673532'
+        brightness:
+        - 7
+        - 15
+  lower_blackrock_spire:
+    names:
+    - Lower Blackrock Spire
+    type: dungeon
+    motion: active
+    effect: embers
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#A14932'
+        - '#AA523B'
+        brightness:
+        - 21
+        - 29
+      rectangle_front_right:
+        palette:
+        - '#A14932'
+        - '#AA523B'
+        brightness:
+        - 20
+        - 28
+      rectangle_rear_left:
+        palette:
+        - '#514A48'
+        - '#5A5351'
+        brightness:
+        - 16
+        - 24
+      rectangle_rear_right:
+        palette:
+        - '#514A48'
+        - '#5A5351'
+        brightness:
+        - 14
+        - 22
+      bedside:
+        palette:
+        - '#B77439'
+        - '#C07D42'
+        brightness:
+        - 6
+        - 14
+  upper_blackrock_spire:
+    names:
+    - Upper Blackrock Spire
+    type: dungeon
+    motion: active
+    effect: embers
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#AA3C30'
+        - '#B34539'
+        brightness:
+        - 24
+        - 32
+      rectangle_front_right:
+        palette:
+        - '#AA3C30'
+        - '#B34539'
+        brightness:
+        - 23
+        - 31
+      rectangle_rear_left:
+        palette:
+        - '#C97B34'
+        - '#D2843D'
+        brightness:
+        - 18
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#C97B34'
+        - '#D2843D'
+        brightness:
+        - 16
+        - 24
+      bedside:
+        palette:
+        - '#4F2929'
+        - '#583232'
+        brightness:
+        - 7
+        - 15
+  scholomance:
+    names:
+    - Scholomance
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#6B4B89'
+        - '#745492'
+        brightness:
+        - 15
+        - 21
+      rectangle_front_right:
+        palette:
+        - '#6B4B89'
+        - '#745492'
+        brightness:
+        - 14
+        - 20
+      rectangle_rear_left:
+        palette:
+        - '#627444'
+        - '#6B7D4D'
+        brightness:
+        - 11
+        - 17
+      rectangle_rear_right:
+        palette:
+        - '#627444'
+        - '#6B7D4D'
+        brightness:
+        - 10
+        - 16
+      bedside:
+        palette:
+        - '#263649'
+        - '#2F3F52'
+        brightness:
+        - 4
+        - 10
+  stratholme:
+    names:
+    - Stratholme
+    type: dungeon
+    motion: active
+    effect: embers
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#BC7336'
+        - '#C57C3F'
+        brightness:
+        - 22
+        - 30
+      rectangle_front_right:
+        palette:
+        - '#BC7336'
+        - '#C57C3F'
+        brightness:
+        - 21
+        - 29
+      rectangle_rear_left:
+        palette:
+        - '#738249'
+        - '#7C8B52'
+        brightness:
+        - 16
+        - 24
+      rectangle_rear_right:
+        palette:
+        - '#738249'
+        - '#7C8B52'
+        brightness:
+        - 15
+        - 23
+      bedside:
+        palette:
+        - '#612F2B'
+        - '#6A3834'
+        brightness:
+        - 6
+        - 14
+  dire_maul_east:
+    names:
+    - Dire Maul East
+    type: dungeon
+    motion: ambient
+    effect: forest
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#4D7948'
+        - '#568251'
+        brightness:
+        - 23
+        - 29
+      rectangle_front_right:
+        palette:
+        - '#4D7948'
+        - '#568251'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_left:
+        palette:
+        - '#7B5C94'
+        - '#84659D'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#7B5C94'
+        - '#84659D'
+        brightness:
+        - 16
+        - 22
+      bedside:
+        palette:
+        - '#2C4A35'
+        - '#35533E'
+        brightness:
+        - 7
+        - 13
+  dire_maul_west:
+    names:
+    - Dire Maul West
+    type: dungeon
+    motion: active
+    effect: arcane
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#7C5E9D'
+        - '#8567A6'
+        brightness:
+        - 22
+        - 28
+      rectangle_front_right:
+        palette:
+        - '#7C5E9D'
+        - '#8567A6'
+        brightness:
+        - 21
+        - 27
+      rectangle_rear_left:
+        palette:
+        - '#52799E'
+        - '#5B82A7'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#52799E'
+        - '#5B82A7'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#564272'
+        - '#5F4B7B'
+        brightness:
+        - 7
+        - 13
+  dire_maul_north:
+    names:
+    - Dire Maul North
+    type: dungeon
+    motion: subtle
+    effect: default
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#AA7947'
+        - '#B38250'
+        brightness:
+        - 24
+        - 30
+      rectangle_front_right:
+        palette:
+        - '#AA7947'
+        - '#B38250'
+        brightness:
+        - 23
+        - 29
+      rectangle_rear_left:
+        palette:
+        - '#82705B'
+        - '#8B7964'
+        brightness:
+        - 18
+        - 24
+      rectangle_rear_right:
+        palette:
+        - '#82705B'
+        - '#8B7964'
+        brightness:
+        - 17
+        - 23
+      bedside:
+        palette:
+        - '#B48A43'
+        - '#BD934C'
+        brightness:
+        - 8
+        - 14
+  hall_of_thanes:
+    names:
+    - Hall of Thanes
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B49A56'
+        - '#BDA35F'
+        brightness:
+        - 23
+        - 29
+      rectangle_front_right:
+        palette:
+        - '#B49A56'
+        - '#BDA35F'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_left:
+        palette:
+        - '#6484A7'
+        - '#6D8DB0'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#6484A7'
+        - '#6D8DB0'
+        brightness:
+        - 16
+        - 22
+      bedside:
+        palette:
+        - '#A87C40'
+        - '#B18549'
+        brightness:
+        - 7
+        - 13
+  ruins_of_lordaeron:
+    names:
+    - Ruins of Lordaeron
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#6D5182'
+        - '#765A8B'
+        brightness:
+        - 19
+        - 25
+      rectangle_front_right:
+        palette:
+        - '#6D5182'
+        - '#765A8B'
+        brightness:
+        - 18
+        - 24
+      rectangle_rear_left:
+        palette:
+        - '#718349'
+        - '#7A8C52'
+        brightness:
+        - 14
+        - 20
+      rectangle_rear_right:
+        palette:
+        - '#718349'
+        - '#7A8C52'
+        brightness:
+        - 13
+        - 19
+      bedside:
+        palette:
+        - '#486D91'
+        - '#51769A'
+        brightness:
+        - 6
+        - 12
+  excavation_site_wetlands:
+    names:
+    - 'Excavation Site: Wetlands'
+    type: dungeon
+    motion: subtle
+    effect: default
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B28D4D'
+        - '#BB9656'
+        brightness:
+        - 23
+        - 29
+      rectangle_front_right:
+        palette:
+        - '#B28D4D'
+        - '#BB9656'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_left:
+        palette:
+        - '#5E7C8A'
+        - '#678593'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#5E7C8A'
+        - '#678593'
+        brightness:
+        - 16
+        - 22
+      bedside:
+        palette:
+        - '#7C624A'
+        - '#856B53'
+        brightness:
+        - 7
+        - 13
+  city_of_dalaran:
+    names:
+    - City of Dalaran
+    type: dungeon
+    motion: active
+    effect: arcane
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#8466AF'
+        - '#8D6FB8'
+        brightness:
+        - 25
+        - 31
+      rectangle_front_right:
+        palette:
+        - '#8466AF'
+        - '#8D6FB8'
+        brightness:
+        - 24
+        - 30
+      rectangle_rear_left:
+        palette:
+        - '#4C85B6'
+        - '#558EBF'
+        brightness:
+        - 19
+        - 25
+      rectangle_rear_right:
+        palette:
+        - '#4C85B6'
+        - '#558EBF'
+        brightness:
+        - 17
+        - 23
+      bedside:
+        palette:
+        - '#A66C9B'
+        - '#AF75A4'
+        brightness:
+        - 8
+        - 14
+  the_drowned_city:
+    names:
+    - The Drowned City
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#3C7A7E'
+        - '#458387'
+        brightness:
+        - 21
+        - 27
+      rectangle_front_right:
+        palette:
+        - '#3C7A7E'
+        - '#458387'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_left:
+        palette:
+        - '#557A4B'
+        - '#5E8354'
+        brightness:
+        - 16
+        - 22
+      rectangle_rear_right:
+        palette:
+        - '#557A4B'
+        - '#5E8354'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#284B73'
+        - '#31547C'
+        brightness:
+        - 7
+        - 13
+  krol_dok_stronghold:
+    names:
+    - Krol'dok Stronghold
+    type: dungeon
+    motion: active
+    effect: embers
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B57B43'
+        - '#BE844C'
+        brightness:
+        - 23
+        - 31
+      rectangle_front_right:
+        palette:
+        - '#B57B43'
+        - '#BE844C'
+        brightness:
+        - 22
+        - 30
+      rectangle_rear_left:
+        palette:
+        - '#67804D'
+        - '#708956'
+        brightness:
+        - 17
+        - 25
+      rectangle_rear_right:
+        palette:
+        - '#67804D'
+        - '#708956'
+        brightness:
+        - 16
+        - 24
+      bedside:
+        palette:
+        - '#805134'
+        - '#895A3D'
+        brightness:
+        - 7
+        - 15
+  alcaz_prison:
+    names:
+    - Alcaz Prison
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#567C99'
+        - '#5F85A2'
+        brightness:
+        - 21
+        - 27
+      rectangle_front_right:
+        palette:
+        - '#567C99'
+        - '#5F85A2'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_left:
+        palette:
+        - '#994B43'
+        - '#A2544C'
+        brightness:
+        - 16
+        - 22
+      rectangle_rear_right:
+        palette:
+        - '#994B43'
+        - '#A2544C'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#765735'
+        - '#7F603E'
+        brightness:
+        - 7
+        - 13
+  blackmaw_hold:
+    names:
+    - Blackmaw Hold
+    type: dungeon
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#476B44'
+        - '#50744D'
+        brightness:
+        - 21
+        - 27
+      rectangle_front_right:
+        palette:
+        - '#476B44'
+        - '#50744D'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_left:
+        palette:
+        - '#77568C'
+        - '#805F95'
+        brightness:
+        - 16
+        - 22
+      rectangle_rear_right:
+        palette:
+        - '#77568C'
+        - '#805F95'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#7B873E'
+        - '#849047'
+        brightness:
+        - 7
+        - 13
+  shaper_s_terrace:
+    names:
+    - Shaper's Terrace
+    type: dungeon
+    motion: active
+    effect: arcane
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#61A3AF'
+        - '#6AACB8'
+        brightness:
+        - 25
+        - 31
+      rectangle_front_right:
+        palette:
+        - '#61A3AF'
+        - '#6AACB8'
+        brightness:
+        - 24
+        - 30
+      rectangle_rear_left:
+        palette:
+        - '#B29C57'
+        - '#BBA560'
+        brightness:
+        - 19
+        - 25
+      rectangle_rear_right:
+        palette:
+        - '#B29C57'
+        - '#BBA560'
+        brightness:
+        - 17
+        - 23
+      bedside:
+        palette:
+        - '#3C6188'
+        - '#456A91'
+        brightness:
+        - 8
+        - 14
+  barrow_deeps:
+    names:
+    - Barrow Deeps
+    type: raid
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#365C40'
+        - '#3F6549'
+        brightness:
+        - 17
+        - 23
+      rectangle_front_right:
+        palette:
+        - '#614576'
+        - '#6A4E7F'
+        brightness:
+        - 16
+        - 22
+      rectangle_rear_left:
+        palette:
+        - '#45678C'
+        - '#4E7095'
+        brightness:
+        - 13
+        - 19
+      rectangle_rear_right:
+        palette:
+        - '#907039'
+        - '#997942'
+        brightness:
+        - 12
+        - 18
+      bedside:
+        palette:
+        - '#2C203B'
+        - '#352944'
+        brightness:
+        - 5
+        - 11
+  hyjal_summit:
+    names:
+    - Hyjal Summit
+    type: raid
+    motion: ambient
+    effect: forest
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#337B52'
+        - '#3C845B'
+        brightness:
+        - 29
+        - 35
+      rectangle_front_right:
+        palette:
+        - '#507A9F'
+        - '#5983A8'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_left:
+        palette:
+        - '#BDA65D'
+        - '#C6AF66'
+        brightness:
+        - 22
+        - 28
+      rectangle_rear_right:
+        palette:
+        - '#2F513B'
+        - '#385A44'
+        brightness:
+        - 20
+        - 26
+      bedside:
+        palette:
+        - '#699E92'
+        - '#72A79B'
+        brightness:
+        - 10
+        - 16
+  warsong_gulch:
+    names:
+    - Warsong Gulch
+    type: battleground
+    motion: ambient
+    effect: forest
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#4A794B'
+        - '#538254'
+        brightness:
+        - 33
+        - 39
+      rectangle_front_right:
+        palette:
+        - '#4A794B'
+        - '#538254'
+        brightness:
+        - 32
+        - 38
+      rectangle_rear_left:
+        palette:
+        - '#9E4C43'
+        - '#A7554C'
+        brightness:
+        - 25
+        - 31
+      rectangle_rear_right:
+        palette:
+        - '#9E4C43'
+        - '#A7554C'
+        brightness:
+        - 23
+        - 29
+      bedside:
+        palette:
+        - '#3D597C'
+        - '#466285'
+        brightness:
+        - 11
+        - 17
+  arathi_basin:
+    names:
+    - Arathi Basin
+    type: battleground
+    motion: ambient
+    effect: forest
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#63894B'
+        - '#6C9254'
+        brightness:
+        - 37
+        - 43
+      rectangle_front_right:
+        palette:
+        - '#63894B'
+        - '#6C9254'
+        brightness:
+        - 35
+        - 41
+      rectangle_rear_left:
+        palette:
+        - '#B99B52'
+        - '#C2A45B'
+        brightness:
+        - 28
+        - 34
+      rectangle_rear_right:
+        palette:
+        - '#B99B52'
+        - '#C2A45B'
+        brightness:
+        - 26
+        - 32
+      bedside:
+        palette:
+        - '#668EA8'
+        - '#6F97B1'
+        brightness:
+        - 13
+        - 19
+  darkspear_islands:
+    names:
+    - Darkspear Islands
+    type: battleground
+    motion: ambient
+    effect: forest
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#3D9690'
+        - '#469F99'
+        brightness:
+        - 35
+        - 41
+      rectangle_front_right:
+        palette:
+        - '#3D9690'
+        - '#469F99'
+        brightness:
+        - 33
+        - 39
+      rectangle_rear_left:
+        palette:
+        - '#BC7338'
+        - '#C57C41'
+        brightness:
+        - 27
+        - 33
+      rectangle_rear_right:
+        palette:
+        - '#BC7338'
+        - '#C57C41'
+        brightness:
+        - 25
+        - 31
+      bedside:
+        palette:
+        - '#3E7948'
+        - '#478251'
+        brightness:
+        - 12
+        - 18
+  molten_core:
+    names:
+    - Molten Core
+    type: raid
+    motion: active
+    effect: embers
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B64F28'
+        - '#BF5831'
+        brightness:
+        - 26
+        - 34
+      rectangle_front_right:
+        palette:
+        - '#B64F28'
+        - '#BF5831'
+        brightness:
+        - 25
+        - 33
+      rectangle_rear_left:
+        palette:
+        - '#C47A32'
+        - '#CD833B'
+        brightness:
+        - 19
+        - 27
+      rectangle_rear_right:
+        palette:
+        - '#C47A32'
+        - '#CD833B'
+        brightness:
+        - 18
+        - 26
+      bedside:
+        palette:
+        - '#612B25'
+        - '#6A342E'
+        brightness:
+        - 8
+        - 16
+  blackwing_lair:
+    names:
+    - Blackwing Lair
+    type: raid
+    motion: active
+    effect: embers
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#9A3431'
+        - '#A33D3A'
+        brightness:
+        - 22
+        - 30
+      rectangle_front_right:
+        palette:
+        - '#9A3431'
+        - '#A33D3A'
+        brightness:
+        - 21
+        - 29
+      rectangle_rear_left:
+        palette:
+        - '#B86A32'
+        - '#C1733B'
+        brightness:
+        - 16
+        - 24
+      rectangle_rear_right:
+        palette:
+        - '#B86A32'
+        - '#C1733B'
+        brightness:
+        - 15
+        - 23
+      bedside:
+        palette:
+        - '#492B38'
+        - '#523441'
+        brightness:
+        - 6
+        - 14
+  zul_gurub:
+    names:
+    - Zul'Gurub
+    type: raid
+    motion: ambient
+    effect: forest
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#3F784A'
+        - '#488153'
+        brightness:
+        - 27
+        - 33
+      rectangle_front_right:
+        palette:
+        - '#3F784A'
+        - '#488153'
+        brightness:
+        - 26
+        - 32
+      rectangle_rear_left:
+        palette:
+        - '#B59245'
+        - '#BE9B4E'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#B59245'
+        - '#BE9B4E'
+        brightness:
+        - 19
+        - 25
+      bedside:
+        palette:
+        - '#513D69'
+        - '#5A4672'
+        brightness:
+        - 9
+        - 15
+  ruins_of_ahn_qiraj:
+    names:
+    - Ruins of Ahn'Qiraj
+    type: raid
+    motion: active
+    effect: arcane
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#B19B51'
+        - '#BAA45A'
+        brightness:
+        - 26
+        - 32
+      rectangle_front_right:
+        palette:
+        - '#B19B51'
+        - '#BAA45A'
+        brightness:
+        - 25
+        - 31
+      rectangle_rear_left:
+        palette:
+        - '#66958F'
+        - '#6F9E98'
+        brightness:
+        - 20
+        - 26
+      rectangle_rear_right:
+        palette:
+        - '#66958F'
+        - '#6F9E98'
+        brightness:
+        - 18
+        - 24
+      bedside:
+        palette:
+        - '#766084'
+        - '#7F698D'
+        brightness:
+        - 9
+        - 15
+  temple_of_ahn_qiraj:
+    names:
+    - Temple of Ahn'Qiraj
+    type: raid
+    motion: active
+    effect: arcane
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#819052'
+        - '#8A995B'
+        brightness:
+        - 22
+        - 28
+      rectangle_front_right:
+        palette:
+        - '#819052'
+        - '#8A995B'
+        brightness:
+        - 21
+        - 27
+      rectangle_rear_left:
+        palette:
+        - '#5C8E8A'
+        - '#659793'
+        brightness:
+        - 17
+        - 23
+      rectangle_rear_right:
+        palette:
+        - '#5C8E8A'
+        - '#659793'
+        brightness:
+        - 15
+        - 21
+      bedside:
+        palette:
+        - '#695080'
+        - '#725989'
+        brightness:
+        - 7
+        - 13
+  naxxramas:
+    names:
+    - Naxxramas
+    type: raid
+    motion: ambient
+    effect: haunted
+    transition_seconds: 2.5
+    lights:
+      rectangle_front_left:
+        palette:
+        - '#59799C'
+        - '#6282A5'
+        brightness:
+        - 17
+        - 23
+      rectangle_front_right:
+        palette:
+        - '#59799C'
+        - '#6282A5'
+        brightness:
+        - 16
+        - 22
+      rectangle_rear_left:
+        palette:
+        - '#64834D'
+        - '#6D8C56'
+        brightness:
+        - 13
+        - 19
+      rectangle_rear_right:
+        palette:
+        - '#64834D'
+        - '#6D8C56'
+        brightness:
+        - 12
+        - 18
+      bedside:
+        palette:
+        - '#57406D'
+        - '#604976'
+        brightness:
+        - 5
+        - 11
