@@ -62,7 +62,10 @@ Defaults in `config/ocr.yaml`, under `unknown_capture`:
 
 - OCR confidence at least 0.75; at least five normalized characters.
 - Three consecutive identical normalized unknown reads.
-- Five-minute repeat suppression, keyed by parent and normalized text.
+- Persistent deduplication by parent and normalized text, including across restarts.
+  A successfully saved pair is never appended again. Case, punctuation and whitespace
+  differences normalize to the same key. The five-minute detector cooldown remains
+  an efficiency setting; it does not permit repeated writes of saved discoveries.
 - Parent age up to 60 seconds: strong previous context.
 - Parent age 60–300 seconds: weak diagnostic context.
 - Beyond 300 seconds: parent is null; historical location remains diagnostic.
@@ -84,6 +87,11 @@ discovery writes, set `unknown_capture.enabled: false`. In that mode unknown rea
 simply hold the current scene. File-write failures are logged without crashing
 lighting. Run one companion process at a time; this file is not a multi-writer
 database. The dataset is intentionally append-only; archive it when desired.
+Existing duplicate records from older versions are retained for review but no new
+copies are appended. A name observed under a different parent (including an unknown
+parent) remains a separate discovery because identical subzone names can occur in
+different places. OCR spelling errors with different normalized text may still be
+separate candidates. Summary counts describe saved records, not repeat visits.
 
 ## Review and propose additions
 

@@ -77,6 +77,10 @@ class UnknownLocationLogger:
         self.path, self.config = Path(path), config
         self.detector = UnknownDetector(config)
         self.session_id = str(uuid4())
+        # Persist uniqueness across restarts, including records from older sessions.
+        # Invalid/partial records are ignored by the same reader as review tooling.
+        index = UnknownLocationIndex().load(self.path) if config.enabled else UnknownLocationIndex()
+        self.seen = {(parent, normalize(text)) for parent, text in index.groups}
 
     def reset(self):
         self.detector.reset()
@@ -89,6 +93,9 @@ class UnknownLocationLogger:
         timestamp = datetime.now(UTC).isoformat()
         record = self.detector.observe(raw, confidence, parent, now, timestamp)
         if record is None:
+            return None
+        key = (parent, record["normalized_text"])
+        if key in self.seen:
             return None
         record.update(
             schema_version=1,
@@ -130,6 +137,7 @@ class UnknownLocationLogger:
                 stream.write(
                     ("\n" if needs_newline else "") + json.dumps(record, ensure_ascii=False) + "\n"
                 )
+            self.seen.add(key)
             logging.getLogger(__name__).info(
                 "unknown_location_confirmed text=%r parent=%s", raw, parent
             )

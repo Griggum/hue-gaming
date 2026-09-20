@@ -166,3 +166,47 @@ def test_same_label_different_parents_consolidates_separately(tmp_path):
     summary = UnknownLocationIndex().load(path).summary()["unknown_locations"]
     assert len(summary) == 2
     assert {r["parent_profile"] for r in summary.values()} == {"westfall", "duskwood"}
+
+
+def test_saved_discovery_is_not_repeated_after_cooldown_or_restart(tmp_path):
+    matcher = make_matcher()
+    path = tmp_path / "observations.jsonl"
+    session = AutoSession(
+        matcher, unknown_logger=UnknownLocationLogger(path, matcher.config.unknown_capture)
+    )
+    for start in (0, 400):
+        session.pause()
+        for now in range(start, start + 3):
+            session.observe("Uncharted Place", 0.95, now)
+    original = path.read_bytes()
+    assert len(original.splitlines()) == 1
+    restarted = AutoSession(
+        matcher, unknown_logger=UnknownLocationLogger(path, matcher.config.unknown_capture)
+    )
+    for now in range(3):
+        restarted.observe("  UNCHARTED   PLACE! ", 0.95, now)
+    assert path.read_bytes() == original
+    for now in range(3, 6):
+        restarted.observe("Another Uncharted Place", 0.95, now)
+    assert len(path.read_bytes().splitlines()) == 2
+
+
+def test_failed_write_does_not_mark_discovery_saved(tmp_path, monkeypatch):
+    matcher = make_matcher()
+    path = tmp_path / "observations.jsonl"
+    logger = UnknownLocationLogger(path, matcher.config.unknown_capture)
+    session = AutoSession(matcher, unknown_logger=logger)
+    original_open = Path.open
+
+    def failing_open(self, *args, **kwargs):
+        if self == path and args and args[0] == "a":
+            raise OSError("Simulated disk failure")
+        return original_open(self, *args, **kwargs)
+
+    with monkeypatch.context() as patch:
+        patch.setattr(Path, "open", failing_open)
+        for now in range(3):
+            session.observe("Uncharted Place", 0.95, now)
+    assert not logger.seen
+    session.observe("Uncharted Place", 0.95, 3)
+    assert len(path.read_bytes().splitlines()) == 1
