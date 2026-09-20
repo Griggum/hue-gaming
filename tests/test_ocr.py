@@ -111,7 +111,7 @@ def test_clipped_labels(matcher, text, profile):
     assert match.profile == profile
 
 
-@pytest.mark.parametrize("text", ["Scarlet Monastery", "Dire Maul", "The", "Strang"])
+@pytest.mark.parametrize("text", ["Scarlet Monastery", "The", "Strang"])
 def test_short_or_ambiguous_prefix_rejected(matcher, text):
     assert matcher.match(text, 0.95) is None
 

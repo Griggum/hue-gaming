@@ -102,6 +102,7 @@ def execute(args):
                 duration=args.duration,
                 seed=args.seed,
                 lighting=config.lighting,
+                unknown_path=ocr_path.parent / ocr_config.unknown_capture.output_file,
             )
     if args.command in ("validate", "profiles"):
         if args.command == "validate":
@@ -179,6 +180,7 @@ def execute(args):
                 args.duration,
                 args.seed,
                 config.lighting,
+                unknown_path=ocr_path.parent / ocr_config.unknown_capture.output_file,
             )
         controller.submit(targets)
         started = time.monotonic()

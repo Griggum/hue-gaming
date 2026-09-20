@@ -1,5 +1,6 @@
 """Local matching and debouncing, independent of capture and Hue."""
 
+import time
 from dataclasses import dataclass
 from difflib import SequenceMatcher
 
@@ -7,9 +8,12 @@ from pydantic import Field
 
 from .config import normalize, read_yaml
 from .models import Model
+from .unknown_locations import UnknownCaptureConfig
 
 
 class OCRConfig(Model):
+    registry_files: list[str] = Field(default_factory=list)
+    unknown_capture: UnknownCaptureConfig = Field(default_factory=UnknownCaptureConfig)
     aliases_file: str = "location_aliases.yaml"
     calibration_file: str = "ocr.local.yaml"
     process_names: list[str] = Field(
@@ -50,12 +54,16 @@ class Match:
     confidence: float
     ocr_confidence: float
     match_method: str = "full"
+    parent_profile: str | None = None
+    parent_location: str | None = None
 
 
 class Matcher:
     def __init__(self, catalog, aliases, config):
         self.catalog, self.config = catalog, config
         self.names = {}
+        self.parents = {}
+        self.scoped = {}
         for key, profile in catalog.profiles.items():
             if profile.type == "neutral":
                 continue
@@ -64,12 +72,30 @@ class Matcher:
         if not isinstance(aliases, dict) or set(aliases) != {"location_aliases"}:
             raise ValueError("Alias file must contain location_aliases")
         for name, definition in aliases["location_aliases"].items():
-            if not isinstance(definition, dict) or set(definition) != {"parent"}:
-                raise ValueError(f"Alias {name} must define one parent")
-            key = catalog.resolve(definition["parent"])
-            if key is None or catalog.profiles[key].type == "neutral":
-                raise ValueError(f"Unknown parent profile for alias {name}")
-            self.add(name, key)
+            definitions = definition if isinstance(definition, list) else [definition]
+            if not definitions:
+                raise ValueError(f"Empty scoped alias: {name}")
+            for entry in definitions:
+                if (
+                    not isinstance(entry, dict)
+                    or "parent" not in entry
+                    or set(entry) - {"parent", "profile"}
+                ):
+                    raise ValueError(f"Alias {name} requires parent and optional profile")
+                parent = catalog.resolve(entry["parent"])
+                if parent is None or catalog.profiles[parent].type == "neutral":
+                    raise ValueError(f"Unknown parent profile for alias {name}")
+                target = entry.get("profile", parent)
+                if target not in catalog.profiles or catalog.profiles[target].type == "neutral":
+                    raise ValueError(f"Unknown lighting profile for alias {name}: {target}")
+                normalized = normalize(name)
+                if isinstance(definition, list):
+                    if normalized in self.names or parent in self.scoped.get(normalized, {}):
+                        raise ValueError(f"Ambiguous scoped alias: {name}")
+                    self.scoped.setdefault(normalized, {})[parent] = (name, target)
+                else:
+                    self.add(name, target)
+                self.parents[(normalized, target)] = parent
 
     def add(self, name, key):
         normalized = normalize(name)
@@ -79,20 +105,43 @@ class Matcher:
             raise ValueError(f"Ambiguous location alias: {name}")
         self.names[normalized] = (name, key)
 
-    def match(self, raw, confidence):
+    def match(self, raw, confidence, parent_profile=None):
         text = normalize(raw)
         if len(text) < 4 or confidence < self.config.minimum_ocr_confidence:
             return None
-        if text in self.names:
-            display, key = self.names[text]
-            return Match(raw, display, key, self.catalog.profiles[key].names[0], 1.0, confidence)
+        names = dict(self.names)
+        for label, scopes in self.scoped.items():
+            if parent_profile in scopes:
+                names[label] = scopes[parent_profile]
+        if text in self.scoped and text not in names:
+            return None
+
+        def result(display, key, score, method):
+            parent = self.parents.get((normalize(display), key), key)
+            if normalize(display) in self.scoped:
+                parent = parent_profile
+            return Match(
+                raw,
+                display,
+                key,
+                self.catalog.profiles[key].names[0],
+                score,
+                confidence,
+                method,
+                parent,
+                self.catalog.profiles[parent].names[0],
+            )
+
+        if text in names:
+            display, key = names[text]
+            return result(display, key, 1.0, "full")
         # A shared literal prefix cannot identify a wing/zone even if one name
         # happens to be shorter and therefore scores better as a whole string.
-        prefix_parents = {key for name, (_, key) in self.names.items() if name.startswith(text)}
+        prefix_parents = {key for name, (_, key) in names.items() if name.startswith(text)}
         if len(prefix_parents) > 1:
             return None
         ranked = []
-        for name, (display, key) in self.names.items():
+        for name, (display, key) in names.items():
             score = SequenceMatcher(None, text, name).ratio()
             method = "full"
             if (
@@ -118,9 +167,7 @@ class Matcher:
             or score - competitor < self.config.ambiguity_margin
         ):
             return None
-        return Match(
-            raw, display, key, self.catalog.profiles[key].names[0], score, confidence, method
-        )
+        return result(display, key, score, method)
 
 
 class Detector:
@@ -129,12 +176,22 @@ class Detector:
         self.candidate = None
         self.count = 0
         self.confirmed = None
+        self.confirmed_match = None
+        self.parent_seen_at = None
 
     def reset_candidate(self):
         self.candidate, self.count = None, 0
 
-    def observe(self, raw, confidence):
-        match = self.matcher.match(raw, confidence)
+    def observe(self, raw, confidence, now=None):
+        now = time.monotonic() if now is None else now
+        parent = None
+        if (
+            self.confirmed_match
+            and now - self.parent_seen_at
+            <= self.matcher.config.unknown_capture.parent_context_soft_ttl_seconds
+        ):
+            parent = self.confirmed_match.parent_profile
+        match = self.matcher.match(raw, confidence, parent)
         if match is None:
             self.reset_candidate()
             return None, False
@@ -148,10 +205,40 @@ class Detector:
         )
         if changed:
             self.confirmed = match.profile
+        if self.count >= self.matcher.config.consecutive_reads:
+            self.confirmed_match = match
+            # Ambiguous scoped labels must not indefinitely renew their own context.
+            if normalize(match.matched) not in self.matcher.scoped:
+                self.parent_seen_at = now
         return match, changed
 
 
 def load_detection(path, catalog):
     config = OCRConfig.model_validate(read_yaml(path))
-    matcher = Matcher(catalog, read_yaml(path.parent / config.aliases_file), config)
+    aliases = load_aliases(path, config)
+    matcher = Matcher(catalog, aliases, config)
     return config, matcher
+
+
+def load_aliases(path, config):
+    merged = {}
+    spellings = {}
+    # Additional inventories first; hand-maintained aliases explicitly override them.
+    for filename in [*config.registry_files, config.aliases_file]:
+        raw = read_yaml(path.parent / filename)
+        if (
+            not isinstance(raw, dict)
+            or set(raw) != {"location_aliases"}
+            or not isinstance(raw["location_aliases"], dict)
+        ):
+            raise ValueError(f"Invalid alias registry: {filename}")
+        for name, definition in raw["location_aliases"].items():
+            normalized = normalize(name)
+            previous = spellings.get(normalized)
+            if previous is not None:
+                if filename != config.aliases_file:
+                    raise ValueError(f"Conflicting imported alias: {name}")
+                del merged[previous]
+            merged[name] = definition
+            spellings[normalized] = name
+    return {"location_aliases": merged}

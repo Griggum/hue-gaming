@@ -1,4 +1,5 @@
 aliases_file: location_aliases.yaml
+registry_files: [subzones.generated.yaml]
 calibration_file: ocr.local.yaml
 process_names: [WowClassic.exe, Wow.exe]
 samples_per_second: 3
@@ -10,3 +11,15 @@ ambiguity_margin: 0.08
 minimum_prefix_characters: 8
 minimum_prefix_fraction: 0.5
 minimum_prefix_similarity: 0.9
+unknown_capture:
+  enabled: true
+  output_file: unknown_locations.jsonl
+  minimum_ocr_confidence: 0.75
+  consecutive_reads: 3
+  minimum_characters: 5
+  repeat_suppression_seconds: 300
+  parent_context_soft_ttl_seconds: 60
+  parent_context_hard_ttl_seconds: 300
+  # Set explicitly when known; do not infer Forever from the executable name.
+  wow_product: Classic Era
+  wow_build: null

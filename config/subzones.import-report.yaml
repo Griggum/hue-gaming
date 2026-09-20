@@ -1,0 +1,57 @@
+source_records: 918
+unresolved_parents: []
+canonical_name_collisions:
+- label: Gnomeregan
+  parent: Dun Morogh
+  area_id: 133
+- label: Uldaman
+  parent: Badlands
+  area_id: 1517
+- label: Razorfen Downs
+  parent: The Barrens
+  area_id: 1316
+- label: Razorfen Kraul
+  parent: The Barrens
+  area_id: 1717
+- label: Zul'Gurub
+  parent: Stranglethorn Vale
+  area_id: 19
+- label: Alterac Valley
+  parent: Alterac Mountains
+  area_id: 2839
+- label: Ruins of Lordaeron
+  parent: Tirisfal Glades
+  area_id: 153
+- label: Shadowfang Keep
+  parent: Silverpine Forest
+  area_id: 236
+- label: Stratholme
+  parent: Eastern Plaguelands
+  area_id: 2279
+- label: Blackfathom Deeps
+  parent: Ashenvale
+  area_id: 2797
+- label: Zul'Farrak
+  parent: Tanaris
+  area_id: 978
+- label: Ruins of Ahn'Qiraj
+  parent: Silithus
+  area_id: 3454
+manual_overrides:
+- Darkshire
+- Fargodeep Mine
+- Goldshire
+- Northshire Abbey
+- Northshire Valley
+- Raven Hill
+- Raven Hill Cemetery
+- Sentinel Hill
+generated_labels: 863
+parent_group_mappings:
+  Ahn'Qiraj:
+  - temple_of_ahn_qiraj
+  Dire Maul:
+  - dire_maul_east
+  - dire_maul_west
+  - dire_maul_north
+scoped_labels: 27

@@ -174,6 +174,11 @@ subzone. Forever's vocabulary still needs validation in that client.
 
 ## Minimap OCR setup and automatic lighting
 
+See [subzone registry and discovery](docs/SUBZONE_REGISTRY.md) for parent routing,
+dedicated subzone scenes, duplicate-name handling and unknown-label review.
+The supplied Classic inventory contributes 863 minimap labels (27 parent-scoped),
+with manual alias overrides kept separate from the generated registry.
+
 Dependencies include a local CPU OCR engine and bundled models. No Tesseract
 installation, cloud OCR, screenshot uploads, addons or combat logging are needed.
 

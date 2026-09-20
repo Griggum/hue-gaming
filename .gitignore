@@ -14,6 +14,8 @@ credentials.json
 config.local.yaml
 config/lights.yaml
 config/ocr.local.yaml
+config/unknown_locations.jsonl
+config/unknown_locations.generated.yaml
 logs/
 debug/
 *.log

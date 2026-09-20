@@ -13,3 +13,5 @@ location_aliases:
   Sentinel Hill: {parent: Westfall}
   Darkshire: {parent: Duskwood}
   Raven Hill: {parent: Duskwood}
+  Raven Hill Cemetery: {parent: Duskwood}
+  Fargodeep Mine: {parent: Elwynn Forest}
