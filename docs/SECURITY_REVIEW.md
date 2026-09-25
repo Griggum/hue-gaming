@@ -74,7 +74,7 @@ The GitHub workflow:
    rebuilding it. Tags identify the full commit and, for release builds, the Git tag.
 
 Actions are pinned by commit SHA, checkout does not persist credentials, PRs
-cannot publish, and only the image job receives `packages: write`. There are no
+cannot publish, and only the separate publish job receives `packages: write`. There are no
 Hue credentials in CI. Repository code and workflow changes must still be reviewed:
 any maintainer who can change a publishing workflow can change what it publishes.
 
@@ -102,3 +102,18 @@ the local Hue bridge and remains false by default.
 References: [GitHub Actions security guidance](https://docs.github.com/en/actions/reference/security/secure-use),
 [Trivy action](https://github.com/aquasecurity/trivy-action),
 [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
+
+## First CI run: base-image findings
+
+[Run 36171247293](https://github.com/Griggum/hue-gaming/actions/runs/36171247293)
+successfully built ARM64 and passed application tests, but Trivy blocked release
+with 44 HIGH findings (zero CRITICAL) in Debian 13.7 packages, including
+util-linux, ncurses, systemd, acl and perl. The report showed no fixed versions
+for these entries. The image was not published; the secret scan and smoke test
+were skipped after the failed vulnerability gate.
+
+The Dockerfile now uses a digest-pinned Python 3.12 Alpine base in both stages,
+removing the Debian package set rather than suppressing the findings. This keeps
+the Python minor version unchanged. PR workflows now build, scan and smoke-test
+the ARM64 container as well, so future base-image PRs cannot pass on Python unit
+tests alone. The revised image still must pass the same strict scan before release.

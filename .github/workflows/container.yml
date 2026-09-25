@@ -41,13 +41,10 @@ jobs:
 
   image:
     needs: verify
-    # PRs only test. Manual publication is restricted to master.
-    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/tags/v'))
     runs-on: ubuntu-24.04-arm
     timeout-minutes: 30
-    permissions:
-      contents: read
-      packages: write
+    outputs:
+      artifact-id: ${{ steps.candidate.outputs.artifact-id }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
@@ -97,6 +94,37 @@ jobs:
           test "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:8080/api/library)" = 401
           curl --fail --silent -H 'Authorization: Bearer ci-only-disposable-smoke-test-token' \
             http://127.0.0.1:8080/api/library > /dev/null
+      - name: Save the scanned candidate
+        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/tags/v'))
+        run: docker save hue-portal:scan --output "$RUNNER_TEMP/hue-portal.tar"
+      - name: Transfer candidate to publication job
+        if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/tags/v'))
+        id: candidate
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: scanned-image
+          path: ${{ runner.temp }}/hue-portal.tar
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
+
+  publish:
+    needs: image
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/tags/v'))
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Download this run's scanned candidate
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          artifact-ids: ${{ needs.image.outputs.artifact-id }}
+          path: ${{ runner.temp }}/candidate
+          merge-multiple: true
+      - name: Load scanned image
+        run: docker load --input "$RUNNER_TEMP/candidate/hue-portal.tar"
       - name: Publish the scanned image to GHCR
         env:
           GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}

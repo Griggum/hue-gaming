@@ -37,7 +37,8 @@ tags such as `v0.1.0`, or a manual run on `master`, builds a native ARM64 image.
 The workflow audits server dependencies, scans the completed image for OS/Python
 HIGH/CRITICAL vulnerabilities and secrets, and smoke-tests its restricted runtime.
 Only a successful candidate is published to `ghcr.io/griggum/hue-gaming`.
-PRs run tests and the dependency audit without publishing.
+PRs also build, scan and smoke-test the ARM64 image without publishing.
+Only the separate publication job receives package-write permission.
 
 The primary tag is `sha-FULL_COMMIT_SHA`; version-tag builds also publish the Git
 tag, such as `v0.1.0`. Set the deployment image to that tag or the published digest.
