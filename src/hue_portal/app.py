@@ -52,7 +52,7 @@ def create_app(*, data_dir=None, seed=None, token=None, player=None, public_orig
         return Bridge(
             host,
             key,
-            BridgeConfig(ca_file=os.getenv("HUE_CA_FILE")),
+            BridgeConfig(ca_file=os.getenv("HUE_CA_FILE"), bridge_id=os.getenv("HUE_BRIDGE_ID")),
             insecure=os.getenv("HUE_INSECURE", "false").lower() == "true",
         )
 

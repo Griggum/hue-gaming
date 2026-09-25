@@ -29,7 +29,11 @@ hue-portal = "hue_portal.app:main"
 packages = ["src/wow_hue", "src/hue_core", "src/hue_portal"]
 
 [dependency-groups]
-dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+dev = [
+    "cryptography>=46,<49",
+    "pytest>=8,<10",
+    "ruff>=0.11,<1",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

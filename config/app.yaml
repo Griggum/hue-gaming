@@ -13,9 +13,10 @@ env_file: ../.env
 log_file: ../logs/wow-hue.log
 bridge:
   host: null
-  # A custom CA bundle is supported. Local Hue certificates usually require
-  # explicit --insecure until a trusted certificate is configured.
+  # Use the Hue CA bundle and the Bridge ID as its TLS certificate name.
+  # See docs/PI_PORTAL.md for certificate provisioning; paths here are relative.
   ca_file: null
+  bridge_id: null
   request_interval_seconds: 0.25
   timeout_seconds: 5
   max_retry_seconds: 30

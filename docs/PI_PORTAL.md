@@ -129,15 +129,83 @@ motion. Edit palettes and brightness through **Edit**. Add games or change event
 routes under **Game mappings & library backup**. Saves reject dangling references,
 duplicate aliases, invalid colors and conflicting browser revisions.
 
-TLS verification for the Hue bridge is enabled by default. Mount a trusted CA
-bundle and set `HUE_CA_FILE` to its container path. To explicitly trust your local
-bridge's self-signed certificate instead:
+### Hue Bridge HTTPS certificates
 
-```sh
-kubectl -n hue set env deployment/hue-portal HUE_INSECURE=true
+Bridge TLS is separate from the portal's HTTP/HTTPS endpoint and Traefik. An
+`unable to get local issuer certificate` error means the client does not trust
+the Bridge's issuer. Loading a CA alone may then produce an IP-name mismatch:
+Hue certificates identify the **Bridge ID**, not its LAN IP.
+
+Use both `HUE_CA_FILE` and `HUE_BRIDGE_ID`, leaving `HUE_INSECURE=false`:
+
+```dotenv
+HUE_BRIDGE_IP=192.168.10.128
+HUE_BRIDGE_ID=YOUR_16_HEX_DIGIT_BRIDGE_ID
+HUE_CA_FILE=/etc/hue-tls/hue-ca.pem
 ```
 
-Make the same change in your deployment manifest to retain it on later applies.
+Replace the ID placeholder with your actual 16 hexadecimal digits (case does not
+matter). `wow-hue discover` returns candidate IDs and IPs; confirm the ID belongs
+to your Bridge during provisioning. Do not derive the trusted ID automatically
+from an unverified TLS peer. The Bridge ID is not `HUE_USERNAME` or a password.
+
+Obtain the Hue Bridge root CA PEM certificates from Philips Hue's
+[Using HTTPS documentation](https://developers.meethue.com/develop/application-design-guidance/using-https/)
+(developer login may be required). Save the applicable published roots together
+as `hue-ca.pem`. Do not use a remote-API/public-website CA or blindly trust a
+certificate downloaded from an unauthenticated LAN peer. This repository does
+not bundle third-party copies of the trust roots or download them at runtime.
+
+Create a ConfigMap from the public CA bundle (it contains no private keys):
+
+```sh
+sudo k3s kubectl -n hue create configmap hue-bridge-ca \
+  --from-file=hue-ca.pem=./hue-ca.pem --dry-run=client -o yaml \
+  | sudo k3s kubectl apply -f -
+```
+
+Mount it using the provided strategic merge patch:
+
+```sh
+sudo k3s kubectl -n hue patch deployment hue-portal --type=strategic \
+  --patch-file deploy/k3s/bridge-tls.patch.yaml
+```
+
+Add the three values above to your local `portal.env`, preserving the existing
+portal and Bridge credentials and your working origin configuration. Update the
+Secret without deleting it:
+
+```sh
+sudo k3s kubectl -n hue create secret generic hue-credentials \
+  --from-env-file=portal.env --dry-run=client -o yaml \
+  | sudo k3s kubectl apply -f -
+sudo k3s kubectl -n hue rollout restart deployment/hue-portal
+sudo k3s kubectl -n hue rollout status deployment/hue-portal
+```
+
+The Bridge ID option requires an image built from the change adding this feature;
+the earlier `sha-4ad11ddd39335d12db7e77eff308c4d047bf5d79` image does not support it.
+Build/publish and select the new immutable image tag in `deploy/k3s/app.yaml`
+before deploying. Retain the CA mount patch with future deployments.
+
+The client connects to the configured IP but uses the configured Bridge ID for
+TLS SNI and certificate-name validation (including Hue's CN-only certificates).
+CA chain, expiration, and name verification remain enabled, before the Bridge
+key is sent. An incorrect ID, unknown issuer, or expired certificate fails closed;
+there is no automatic HTTP or unverified-HTTPS fallback. A configured CA bundle
+replaces the default trust roots **only for this Bridge client**. Without a Bridge
+ID, existing IP certificate verification is unchanged. Portal access, profile
+sync, discovery, and the system trust store are not modified.
+
+For legacy self-signed Bridges, provision an independently verified certificate
+as a trust anchor in `HUE_CA_FILE`, with the matching Bridge ID. Renew the mounted
+trust material as needed. `HUE_INSECURE=true` remains an explicit diagnostic escape
+hatch for this Bridge client only; it disables certificate verification and does
+not pin or establish trust in a certificate. It is not the recommended fix.
+
+WoW uses the same transport: set `bridge.ca_file` (relative to `config/app.yaml`)
+and `bridge.bridge_id` in that file. The generic `hue-client` accepts `--ca-file`
+and `--bridge-id`. Neither needs `--insecure` with correct trust configuration.
 The portal starts without bridge access so profile editing and sync still work
 during a Hue outage. Playback errors appear in the portal. No credentials are
 returned through its API. `/healthz` and `/readyz` are unauthenticated probes.

@@ -59,6 +59,7 @@ class Scene(Model):
 class BridgeConfig(Model):
     host: str | None = None
     ca_file: str | None = None
+    bridge_id: str | None = Field(default=None, pattern=r"^[0-9a-fA-F]{16}$")
     request_interval_seconds: float = Field(default=0.25, ge=0.1, le=10)
     timeout_seconds: float = Field(default=5, gt=0, le=60)
     max_retry_seconds: float = Field(default=30, ge=1, le=300)

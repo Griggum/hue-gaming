@@ -309,3 +309,32 @@ def test_api_security_boundary(tmp_path, monkeypatch):
 def test_public_origin_requires_https(tmp_path):
     with pytest.raises(ValueError, match="HTTPS origin"):
         create_app(data_dir=tmp_path, seed=SEED, token=TOKEN, public_origin="http://hue.home.arpa")
+
+
+def test_portal_passes_bridge_tls_configuration(tmp_path, monkeypatch):
+    captured = []
+
+    class FakeBridge:
+        def __init__(self, host, key, config, *, insecure):
+            captured.append((host, key, config, insecure))
+
+        def lights(self):
+            return []
+
+        def close(self):
+            pass
+
+    monkeypatch.setenv("HUE_BRIDGE_IP", "192.168.10.128")
+    monkeypatch.setenv("HUE_USERNAME", "test-bridge-key")
+    monkeypatch.setenv("HUE_CA_FILE", "/etc/hue-tls/hue-ca.pem")
+    monkeypatch.setenv("HUE_BRIDGE_ID", "001788fffe123abc")
+    monkeypatch.setenv("HUE_INSECURE", "false")
+    monkeypatch.setattr("hue_portal.app.Bridge", FakeBridge)
+    with TestClient(create_app(data_dir=tmp_path, seed=SEED, token=TOKEN)) as client:
+        assert client.get("/api/lights", headers=AUTH).status_code == 200
+    host, key, config, insecure = captured[0]
+    assert host == "192.168.10.128"
+    assert key == "test-bridge-key"
+    assert config.ca_file == "/etc/hue-tls/hue-ca.pem"
+    assert config.bridge_id == "001788fffe123abc"
+    assert insecure is False

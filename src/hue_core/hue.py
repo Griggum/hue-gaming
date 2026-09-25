@@ -100,6 +100,11 @@ class Bridge:
             raise ValueError("Bridge address must be a private LAN IP")
         host = f"[{address}]" if address.version == 6 else str(address)
         verification = False if insecure else ssl.create_default_context(cafile=config.ca_file)
+        self.tls_name = config.bridge_id.lower() if config.bridge_id else None
+        if self.tls_name and not insecure:
+            # Hue certificates identify the bridge by ID, sometimes only in the CN.
+            # Keep chain, expiry and name verification enabled for this client only.
+            verification.hostname_checks_common_name = True
         self.client = httpx.Client(
             base_url=f"https://{host}/clip/v2/resource/",
             headers={"hue-application-key": key},
@@ -120,7 +125,13 @@ class Bridge:
             self.sleep(max(0, self.interval - (self.clock() - self.last_request)))
         self.last_request = self.clock()
         try:
-            response = self.client.request(method, path, json=body)
+            response = self.client.request(
+                method,
+                path,
+                json=body,
+                headers={"Host": self.tls_name} if self.tls_name else None,
+                extensions={"sni_hostname": self.tls_name} if self.tls_name else None,
+            )
             if response.status_code in (401, 403):
                 raise AuthenticationError(
                     "Hue rejected the application key; check .env HUE_USERNAME"

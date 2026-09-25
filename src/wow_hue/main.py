@@ -23,7 +23,7 @@ def parser():
     root.add_argument(
         "--insecure",
         action="store_true",
-        help="Explicitly trust a local self-signed bridge certificate",
+        help="Disable Bridge certificate verification (diagnostics only)",
     )
     commands = root.add_subparsers(dest="command", required=True)
     commands.add_parser("validate", help="Validate configuration and profiles offline")
