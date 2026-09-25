@@ -44,6 +44,11 @@ the Pi's PVC. Credentials are injected at runtime using a Kubernetes Secret.
 - Bridge connections use a private LAN IP, certificate verification by default,
   and ignore environment HTTP proxies. Sync does not follow redirects or use
   environment proxies.
+- Hue TLS supports an explicitly provisioned CA bundle and Bridge ID for
+  certificate-name verification, including CN-only Hue certificates. This is
+  scoped to the Bridge client; it does not change system or portal trust. Invalid
+  chains, expired certificates and name mismatches fail before credentials are
+  sent. No automatic unverified connection or HTTP fallback is attempted.
 
 The image runs as UID/GID 10001. The deployment drops all Linux capabilities,
 disables privilege escalation and service-account-token mounting, uses the

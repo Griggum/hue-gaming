@@ -20,6 +20,7 @@ def main():
     parser.add_argument("--env-file", type=Path, default=Path(".env"))
     parser.add_argument("--insecure", action="store_true")
     parser.add_argument("--ca-file")
+    parser.add_argument("--bridge-id", help="16-character Hue Bridge ID for TLS verification")
     parser.add_argument("--game", help="Resolve the name as an event within this game")
     parser.add_argument("--ambient", action="store_true")
     parser.add_argument("--brightness", type=float, default=1)
@@ -45,7 +46,12 @@ def main():
         token, host = credentials(args.env_file)
         if not token or not host:
             raise ValueError("Set HUE_USERNAME and HUE_BRIDGE_IP")
-        bridge = Bridge(host, token, BridgeConfig(ca_file=args.ca_file), insecure=args.insecure)
+        bridge = Bridge(
+            host,
+            token,
+            BridgeConfig(ca_file=args.ca_file, bridge_id=args.bridge_id),
+            insecure=args.insecure,
+        )
         try:
             controller = Controller(bridge, load_mapping(args.lights), bridge.lights())
             controller.submit(targets)

@@ -1,0 +1,18 @@
+# Apply with kubectl patch --type=strategic --patch-file (not kubectl apply).
+# First create the hue-bridge-ca ConfigMap; see docs/PI_PORTAL.md.
+spec:
+  template:
+    spec:
+      containers:
+        - name: portal
+          env:
+            - name: HUE_INSECURE
+              value: "false"
+          volumeMounts:
+            - name: hue-bridge-ca
+              mountPath: /etc/hue-tls
+              readOnly: true
+      volumes:
+        - name: hue-bridge-ca
+          configMap:
+            name: hue-bridge-ca
