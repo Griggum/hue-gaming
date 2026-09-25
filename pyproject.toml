@@ -5,21 +5,28 @@ build-backend = "hatchling.build"
 [project]
 name = "wow-hue"
 version = "0.1.0"
-description = "Curated, local Philips Hue ambience for World of Warcraft"
+description = "Direct-to-Hue gaming clients and a Raspberry Pi profile portal"
 requires-python = ">=3.11"
 dependencies = [
     "httpx>=0.28,<0.29",
-    "mss>=10,<11",
-    "pillow>=11,<13",
-    "psutil>=7,<8",
     "pydantic>=2.10,<3",
     "python-dotenv>=1.0,<2",
     "PyYAML>=6.0,<7",
-    "rapidocr-onnxruntime==1.4.4",
 ]
+
+[project.optional-dependencies]
+gaming = ["mss>=10,<11", "pillow>=11,<13", "psutil>=7,<8", "rapidocr-onnxruntime==1.4.4"]
+server = ["fastapi>=0.115,<1", "uvicorn>=0.34,<1"]
 
 [project.scripts]
 wow-hue = "wow_hue.main:main"
+hue-client = "hue_core.client:main"
+hue-sync = "hue_core.sync:main"
+hue-import-wow = "wow_hue.library:main"
+hue-portal = "hue_portal.app:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wow_hue", "src/hue_core", "src/hue_portal"]
 
 [dependency-groups]
 dev = ["pytest>=8,<10", "ruff>=0.11,<1"]

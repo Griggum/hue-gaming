@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hue · Game ambience</title><link rel="stylesheet" href="/assets/style.css"><script src="/assets/app.js" defer></script></head>
+<body><main>
+<header><p class="eyebrow">YOUR ROOM, ANOTHER WORLD</p><h1>Game ambience<span> / Hue</span></h1><p>Choose a world. Set the mood.</p></header>
+<section id="login"><label>Portal access token <input id="token" type="password" autocomplete="current-password"></label><button id="connect">Connect</button><p>The token stays in memory for this tab.</p></section>
+<p id="message" role="status" aria-live="polite"></p>
+<div id="portal" hidden>
+<section class="toolbar"><label>Game<select id="game"></select></label><label>Find a preset<input id="search" type="search" placeholder="Forest, city, dungeon…"></label><label>Brightness <input id="brightness" type="range" min="0" max="100" value="100"><output id="brightnessValue">100%</output></label>
+<label class="check"><input id="ambient" type="checkbox"> Keep ambience moving</label><button id="stop" class="secondary">Stop Pi playback</button></section>
+<p id="playback" role="status"></p><p class="hint">Stop PC game lighting before using Pi playback. Stop Pi playback before starting a game client.</p>
+<div class="section-title"><h2>Presets</h2><button id="newScene" class="secondary">New preset</button></div>
+<section id="presets" class="grid" aria-label="Lighting presets"></section>
+<section id="editor" hidden><h2>Edit preset</h2><label>Preset ID<input id="sceneId" pattern="[a-z][a-z0-9_]*"></label><label>Name<input id="sceneName"></label>
+<div class="row"><label>Motion<select id="motion"><option>static</option><option>subtle</option><option>ambient</option><option>active</option></select></label><label>Effect<select id="effect"><option>default</option><option>forest</option><option>embers</option><option>arcane</option><option>snow</option><option>haunted</option></select></label><label>Transition (seconds)<input id="transition" type="number" min="0.1" max="600" step="0.1"></label></div>
+<div id="channels"></div><div class="row"><button id="saveScene">Save preset</button><button id="duplicate" class="secondary">Duplicate</button><button id="deleteScene" class="danger">Delete preset</button><button id="cancelEdit" class="secondary">Close</button></div></section>
+<details><summary>Game mappings &amp; library backup</summary><p>Map game event names to preset IDs. The full library below supports adding games, editing mappings, and copying a backup. Saving checks all references and prevents overwriting newer edits.</p><textarea id="libraryJson" rows="18" spellcheck="false" aria-label="Complete profile library JSON"></textarea><div class="row"><button id="saveLibrary">Save library</button><button id="reload" class="secondary">Reload from Pi</button><button id="download" class="secondary">Download backup</button></div></details>
+<details><summary>Pi light positions</summary><p>Assign each position to a physical light on the Pi's Hue Bridge. The PC keeps its own light assignments.</p><button id="loadLights" class="secondary">Read bridge lights</button><div id="mapping"></div><button id="saveMapping" hidden>Save light positions</button></details>
+<footer>Profiles live on your Pi. Game clients use their local synchronized copy.</footer>
+</div></main></body></html>

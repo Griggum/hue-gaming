@@ -1,0 +1,95 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: hue-data
+  namespace: hue
+spec:
+  accessModes: [ReadWriteOnce]
+  storageClassName: local-path
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hue-portal
+  namespace: hue
+spec:
+  replicas: 1
+  # The file-backed authority and Hue scheduler must have only one writer.
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: hue-portal
+  template:
+    metadata:
+      labels:
+        app: hue-portal
+    spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: portal
+          # Replace with your ARM64 or multi-architecture image tag/digest.
+          image: ghcr.io/griggum/hue-gaming:sha-REPLACE_WITH_COMMIT
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+          envFrom:
+            - secretRef:
+                name: hue-credentials
+          env:
+            - name: HUE_INSECURE
+              value: "false"
+          volumeMounts:
+            - name: data
+              mountPath: /data
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop: [ALL]
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: http
+            initialDelaySeconds: 3
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 10
+          resources:
+            requests:
+              cpu: 100m
+              memory: 96Mi
+            limits:
+              cpu: "1"
+              memory: 256Mi
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: hue-data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hue-portal
+  namespace: hue
+spec:
+  type: ClusterIP
+  selector:
+    app: hue-portal
+  ports:
+    - name: http
+      port: 80
+      targetPort: http

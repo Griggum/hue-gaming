@@ -1,0 +1,26 @@
+# Replace hue.home.arpa in this file and create hue-portal-tls first.
+# Your phone and PC must trust the certificate and resolve the name to the Pi.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hue-portal
+  namespace: hue
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
+spec:
+  ingressClassName: traefik
+  tls:
+    - hosts: [hue.home.arpa]
+      secretName: hue-portal-tls
+  rules:
+    - host: hue.home.arpa
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hue-portal
+                port:
+                  name: http

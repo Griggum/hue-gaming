@@ -1,0 +1,7613 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "scenes": {
+    "wow_stormwind": {
+      "effect": "default",
+      "name": "Stormwind City",
+      "motion": "subtle",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3F608F",
+            "#4D719A"
+          ],
+          "brightness": [
+            35.0,
+            42.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#48698C",
+            "#54769B"
+          ],
+          "brightness": [
+            34.0,
+            41.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#D5AE62",
+            "#E0BC76"
+          ],
+          "brightness": [
+            30.0,
+            37.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#D8C296",
+            "#E3CEAC"
+          ],
+          "brightness": [
+            28.0,
+            35.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#B58B4D",
+            "#C59C5A"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "wow_deadmines": {
+      "effect": "default",
+      "name": "The Deadmines",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#997244",
+            "#A47F50"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#80613E",
+            "#8E7049"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BC883E",
+            "#CA984A"
+          ],
+          "brightness": [
+            25.0,
+            32.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#435C63",
+            "#4E686E"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#5F422B",
+            "#704F30"
+          ],
+          "brightness": [
+            10.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_alterac_valley": {
+      "effect": "snow",
+      "name": "Alterac Valley",
+      "motion": "subtle",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#91B9D2",
+            "#A2C6D9"
+          ],
+          "brightness": [
+            42.0,
+            49.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A9C3D2",
+            "#B9CED9"
+          ],
+          "brightness": [
+            40.0,
+            47.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#658BAE",
+            "#759BBA"
+          ],
+          "brightness": [
+            30.0,
+            36.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#88676D",
+            "#957179"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#50677E",
+            "#607991"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "wow_elwynn_forest": {
+      "effect": "forest",
+      "name": "Elwynn Forest",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#4F8A3C",
+            "#5A9444"
+          ],
+          "brightness": [
+            40.0,
+            47.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#4A8138",
+            "#568D42"
+          ],
+          "brightness": [
+            39.0,
+            46.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#E6B85C",
+            "#DDAA4D"
+          ],
+          "brightness": [
+            30.0,
+            38.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C89545",
+            "#D5A34E"
+          ],
+          "brightness": [
+            28.0,
+            36.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#A86C2D",
+            "#8F5C29"
+          ],
+          "brightness": [
+            12.0,
+            19.0
+          ]
+        }
+      }
+    },
+    "wow_westfall": {
+      "effect": "default",
+      "name": "Westfall",
+      "motion": "subtle",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#D6AE57",
+            "#E0BA68"
+          ],
+          "brightness": [
+            42.0,
+            48.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#CBA04B",
+            "#D8B15F"
+          ],
+          "brightness": [
+            41.0,
+            47.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BB7C43",
+            "#C98C4D"
+          ],
+          "brightness": [
+            30.0,
+            36.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C38B48",
+            "#D29C56"
+          ],
+          "brightness": [
+            29.0,
+            35.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#9B602C",
+            "#AD7134"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "wow_duskwood": {
+      "effect": "haunted",
+      "name": "Duskwood",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#2A1C42",
+            "#34234E"
+          ],
+          "brightness": [
+            20.0,
+            27.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#334C62",
+            "#3B566C"
+          ],
+          "brightness": [
+            18.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#423056",
+            "#4B3861"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#28424F",
+            "#304A58"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#23142D",
+            "#2B1835"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_stranglethorn_vale": {
+      "effect": "forest",
+      "name": "Stranglethorn Vale",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#17683A",
+            "#205F35",
+            "#286E3C"
+          ],
+          "brightness": [
+            36.0,
+            43.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#16623B",
+            "#287746"
+          ],
+          "brightness": [
+            32.0,
+            40.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A86D2B",
+            "#BD792D"
+          ],
+          "brightness": [
+            25.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8E612B",
+            "#B17A32"
+          ],
+          "brightness": [
+            23.0,
+            31.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#103C29",
+            "#173F2D"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "wow_onyxias_lair": {
+      "effect": "embers",
+      "name": "Onyxia's Lair",
+      "motion": "active",
+      "transition_seconds": 2.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A9231D",
+            "#B72B20"
+          ],
+          "brightness": [
+            24.0,
+            31.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#E0631E",
+            "#CF521B"
+          ],
+          "brightness": [
+            29.0,
+            37.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#771A17",
+            "#8A211A"
+          ],
+          "brightness": [
+            20.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B7421C",
+            "#C34D1D"
+          ],
+          "brightness": [
+            24.0,
+            33.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#481315",
+            "#561517"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_neutral": {
+      "effect": "default",
+      "name": "Neutral",
+      "motion": "static",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#E3CBA4"
+          ],
+          "brightness": [
+            30.0,
+            30.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#E3CBA4"
+          ],
+          "brightness": [
+            30.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#D8BC90"
+          ],
+          "brightness": [
+            25.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#D8BC90"
+          ],
+          "brightness": [
+            25.0,
+            25.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#C9A374"
+          ],
+          "brightness": [
+            15.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_redridge_mountains": {
+      "effect": "forest",
+      "name": "Redridge Mountains",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#86513D",
+            "#8F5A46"
+          ],
+          "brightness": [
+            37.0,
+            43.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#86513D",
+            "#8F5A46"
+          ],
+          "brightness": [
+            35.0,
+            41.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#467048",
+            "#4F7951"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#467048",
+            "#4F7951"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#B18A4A",
+            "#BA9353"
+          ],
+          "brightness": [
+            13.0,
+            19.0
+          ]
+        }
+      }
+    },
+    "wow_deadwind_pass": {
+      "effect": "haunted",
+      "name": "Deadwind Pass",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#362940",
+            "#3F3249"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#362940",
+            "#3F3249"
+          ],
+          "brightness": [
+            11.0,
+            17.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#672D37",
+            "#703640"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#672D37",
+            "#703640"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#241C33",
+            "#2D253C"
+          ],
+          "brightness": [
+            3.0,
+            9.0
+          ]
+        }
+      }
+    },
+    "wow_swamp_of_sorrows": {
+      "effect": "haunted",
+      "name": "Swamp of Sorrows",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#365D57",
+            "#3F6660"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#365D57",
+            "#3F6660"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#54613D",
+            "#5D6A46"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#54613D",
+            "#5D6A46"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#423B51",
+            "#4B445A"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_blasted_lands": {
+      "effect": "embers",
+      "name": "Blasted Lands",
+      "motion": "active",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8F392C",
+            "#984235"
+          ],
+          "brightness": [
+            31.0,
+            39.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8F392C",
+            "#984235"
+          ],
+          "brightness": [
+            30.0,
+            38.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B65E30",
+            "#BF6739"
+          ],
+          "brightness": [
+            23.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B65E30",
+            "#BF6739"
+          ],
+          "brightness": [
+            22.0,
+            30.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#602A2C",
+            "#693335"
+          ],
+          "brightness": [
+            10.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "wow_burning_steppes": {
+      "effect": "embers",
+      "name": "Burning Steppes",
+      "motion": "active",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C05B2A",
+            "#C96433"
+          ],
+          "brightness": [
+            31.0,
+            39.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C05B2A",
+            "#C96433"
+          ],
+          "brightness": [
+            30.0,
+            38.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8D3028",
+            "#963931"
+          ],
+          "brightness": [
+            23.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8D3028",
+            "#963931"
+          ],
+          "brightness": [
+            22.0,
+            30.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#582824",
+            "#61312D"
+          ],
+          "brightness": [
+            10.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "wow_searing_gorge": {
+      "effect": "embers",
+      "name": "Searing Gorge",
+      "motion": "active",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C4662C",
+            "#CD6F35"
+          ],
+          "brightness": [
+            28.0,
+            36.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C4662C",
+            "#CD6F35"
+          ],
+          "brightness": [
+            27.0,
+            35.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#792D27",
+            "#823630"
+          ],
+          "brightness": [
+            21.0,
+            29.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#792D27",
+            "#823630"
+          ],
+          "brightness": [
+            19.0,
+            27.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#8D592A",
+            "#966233"
+          ],
+          "brightness": [
+            9.0,
+            17.0
+          ]
+        }
+      }
+    },
+    "wow_badlands": {
+      "effect": "default",
+      "name": "Badlands",
+      "motion": "static",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BD925A",
+            "#C69B63"
+          ],
+          "brightness": [
+            37.0,
+            43.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#BD925A",
+            "#C69B63"
+          ],
+          "brightness": [
+            35.0,
+            41.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A98846",
+            "#B2914F"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A98846",
+            "#B2914F"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#624A32",
+            "#6B533B"
+          ],
+          "brightness": [
+            13.0,
+            19.0
+          ]
+        }
+      }
+    },
+    "wow_loch_modan": {
+      "effect": "forest",
+      "name": "Loch Modan",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#528154",
+            "#5B8A5D"
+          ],
+          "brightness": [
+            37.0,
+            43.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#528154",
+            "#5B8A5D"
+          ],
+          "brightness": [
+            35.0,
+            41.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#567F99",
+            "#5F88A2"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#567F99",
+            "#5F88A2"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#A08A65",
+            "#A9936E"
+          ],
+          "brightness": [
+            13.0,
+            19.0
+          ]
+        }
+      }
+    },
+    "wow_dun_morogh": {
+      "effect": "snow",
+      "name": "Dun Morogh",
+      "motion": "subtle",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#ACC8D8",
+            "#B5D1E1"
+          ],
+          "brightness": [
+            46.0,
+            50.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#ACC8D8",
+            "#B5D1E1"
+          ],
+          "brightness": [
+            44.0,
+            48.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#7099BA",
+            "#79A2C3"
+          ],
+          "brightness": [
+            35.0,
+            39.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#7099BA",
+            "#79A2C3"
+          ],
+          "brightness": [
+            33.0,
+            37.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#CBB488",
+            "#D4BD91"
+          ],
+          "brightness": [
+            17.0,
+            21.0
+          ]
+        }
+      }
+    },
+    "wow_wetlands": {
+      "effect": "forest",
+      "name": "Wetlands",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#547F91",
+            "#5D889A"
+          ],
+          "brightness": [
+            29.0,
+            35.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#547F91",
+            "#5D889A"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#53714E",
+            "#5C7A57"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#53714E",
+            "#5C7A57"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#927343",
+            "#9B7C4C"
+          ],
+          "brightness": [
+            10.0,
+            16.0
+          ]
+        }
+      }
+    },
+    "wow_arathi_highlands": {
+      "effect": "forest",
+      "name": "Arathi Highlands",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#64874B",
+            "#6D9054"
+          ],
+          "brightness": [
+            39.0,
+            45.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#64874B",
+            "#6D9054"
+          ],
+          "brightness": [
+            37.0,
+            43.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B49B53",
+            "#BDA45C"
+          ],
+          "brightness": [
+            30.0,
+            36.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B49B53",
+            "#BDA45C"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#8E5650",
+            "#975F59"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "wow_hillsbrad_foothills": {
+      "effect": "forest",
+      "name": "Hillsbrad Foothills",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#719454",
+            "#7A9D5D"
+          ],
+          "brightness": [
+            41.0,
+            47.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#719454",
+            "#7A9D5D"
+          ],
+          "brightness": [
+            39.0,
+            45.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C5AC69",
+            "#CEB572"
+          ],
+          "brightness": [
+            31.0,
+            37.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C5AC69",
+            "#CEB572"
+          ],
+          "brightness": [
+            29.0,
+            35.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#A18149",
+            "#AA8A52"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        }
+      }
+    },
+    "wow_alterac_mountains": {
+      "effect": "snow",
+      "name": "Alterac Mountains",
+      "motion": "subtle",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8AADC7",
+            "#93B6D0"
+          ],
+          "brightness": [
+            41.0,
+            45.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8AADC7",
+            "#93B6D0"
+          ],
+          "brightness": [
+            39.0,
+            43.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#807C9A",
+            "#8985A3"
+          ],
+          "brightness": [
+            32.0,
+            36.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#807C9A",
+            "#8985A3"
+          ],
+          "brightness": [
+            29.0,
+            33.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#BAC9D1",
+            "#C3D2DA"
+          ],
+          "brightness": [
+            15.0,
+            19.0
+          ]
+        }
+      }
+    },
+    "wow_silverpine_forest": {
+      "effect": "haunted",
+      "name": "Silverpine Forest",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3B587A",
+            "#446183"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3B587A",
+            "#446183"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#504466",
+            "#594D6F"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#504466",
+            "#594D6F"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#305459",
+            "#395D62"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_tirisfal_glades": {
+      "effect": "haunted",
+      "name": "Tirisfal Glades",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#51603A",
+            "#5A6943"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#51603A",
+            "#5A6943"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#544061",
+            "#5D496A"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#544061",
+            "#5D496A"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#303F38",
+            "#394841"
+          ],
+          "brightness": [
+            6.0,
+            12.0
+          ]
+        }
+      }
+    },
+    "wow_western_plaguelands": {
+      "effect": "haunted",
+      "name": "Western Plaguelands",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#9B9445",
+            "#A49D4E"
+          ],
+          "brightness": [
+            27.0,
+            33.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#9B9445",
+            "#A49D4E"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#687043",
+            "#71794C"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#687043",
+            "#71794C"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#76483B",
+            "#7F5144"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_eastern_plaguelands": {
+      "effect": "haunted",
+      "name": "Eastern Plaguelands",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A69C3A",
+            "#AFA543"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A69C3A",
+            "#AFA543"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#657D3E",
+            "#6E8647"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#657D3E",
+            "#6E8647"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#805B2F",
+            "#896438"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_the_hinterlands": {
+      "effect": "forest",
+      "name": "The Hinterlands",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3F704E",
+            "#487957"
+          ],
+          "brightness": [
+            33.0,
+            39.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3F704E",
+            "#487957"
+          ],
+          "brightness": [
+            32.0,
+            38.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A18F50",
+            "#AA9859"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A18F50",
+            "#AA9859"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#294A3C",
+            "#325345"
+          ],
+          "brightness": [
+            11.0,
+            17.0
+          ]
+        }
+      }
+    },
+    "wow_riverglades": {
+      "effect": "forest",
+      "name": "Riverglades",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#769650",
+            "#7F9F59"
+          ],
+          "brightness": [
+            40.0,
+            46.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#769650",
+            "#7F9F59"
+          ],
+          "brightness": [
+            38.0,
+            44.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C8A457",
+            "#D1AD60"
+          ],
+          "brightness": [
+            31.0,
+            37.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C8A457",
+            "#D1AD60"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#B47747",
+            "#BD8050"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "wow_durotar": {
+      "effect": "default",
+      "name": "Durotar",
+      "motion": "static",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B77647",
+            "#C07F50"
+          ],
+          "brightness": [
+            39.0,
+            45.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B77647",
+            "#C07F50"
+          ],
+          "brightness": [
+            37.0,
+            43.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#9F5441",
+            "#A85D4A"
+          ],
+          "brightness": [
+            30.0,
+            36.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#9F5441",
+            "#A85D4A"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#C89245",
+            "#D19B4E"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "wow_the_barrens": {
+      "effect": "default",
+      "name": "The Barrens",
+      "motion": "static",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BDA554",
+            "#C6AE5D"
+          ],
+          "brightness": [
+            42.0,
+            48.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#BDA554",
+            "#C6AE5D"
+          ],
+          "brightness": [
+            40.0,
+            46.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#82864D",
+            "#8B8F56"
+          ],
+          "brightness": [
+            32.0,
+            38.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#82864D",
+            "#8B8F56"
+          ],
+          "brightness": [
+            30.0,
+            36.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#BD8847",
+            "#C69150"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        }
+      }
+    },
+    "wow_mulgore": {
+      "effect": "default",
+      "name": "Mulgore",
+      "motion": "static",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#719453",
+            "#7A9D5C"
+          ],
+          "brightness": [
+            41.0,
+            47.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#719453",
+            "#7A9D5C"
+          ],
+          "brightness": [
+            39.0,
+            45.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#7199AE",
+            "#7AA2B7"
+          ],
+          "brightness": [
+            31.0,
+            37.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#7199AE",
+            "#7AA2B7"
+          ],
+          "brightness": [
+            29.0,
+            35.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#C0A05A",
+            "#C9A963"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        }
+      }
+    },
+    "wow_stonetalon_mountains": {
+      "effect": "forest",
+      "name": "Stonetalon Mountains",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#466C49",
+            "#4F7552"
+          ],
+          "brightness": [
+            32.0,
+            38.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#466C49",
+            "#4F7552"
+          ],
+          "brightness": [
+            31.0,
+            37.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#5C7587",
+            "#657E90"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#5C7587",
+            "#657E90"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#9A7645",
+            "#A37F4E"
+          ],
+          "brightness": [
+            11.0,
+            17.0
+          ]
+        }
+      }
+    },
+    "wow_ashenvale": {
+      "effect": "forest",
+      "name": "Ashenvale",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#285B46",
+            "#31644F"
+          ],
+          "brightness": [
+            29.0,
+            35.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#285B46",
+            "#31644F"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#494774",
+            "#52507D"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#494774",
+            "#52507D"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#354C69",
+            "#3E5572"
+          ],
+          "brightness": [
+            10.0,
+            16.0
+          ]
+        }
+      }
+    },
+    "wow_darkshore": {
+      "effect": "haunted",
+      "name": "Darkshore",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#466782",
+            "#4F708B"
+          ],
+          "brightness": [
+            27.0,
+            33.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#466782",
+            "#4F708B"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#648991",
+            "#6D929A"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#648991",
+            "#6D929A"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#5F607C",
+            "#686985"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_teldrassil": {
+      "effect": "forest",
+      "name": "Teldrassil",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#635082",
+            "#6C598B"
+          ],
+          "brightness": [
+            29.0,
+            35.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#635082",
+            "#6C598B"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#49764E",
+            "#527F57"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#49764E",
+            "#527F57"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#6083A1",
+            "#698CAA"
+          ],
+          "brightness": [
+            10.0,
+            16.0
+          ]
+        }
+      }
+    },
+    "wow_azshara": {
+      "effect": "arcane",
+      "name": "Azshara",
+      "motion": "active",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B17B43",
+            "#BA844C"
+          ],
+          "brightness": [
+            34.0,
+            40.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B17B43",
+            "#BA844C"
+          ],
+          "brightness": [
+            33.0,
+            39.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#527FAD",
+            "#5B88B6"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#527FAD",
+            "#5B88B6"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#534267",
+            "#5C4B70"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "wow_felwood": {
+      "effect": "haunted",
+      "name": "Felwood",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#5D7F3D",
+            "#668846"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#5D7F3D",
+            "#668846"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#624571",
+            "#6B4E7A"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#624571",
+            "#6B4E7A"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#293D30",
+            "#324639"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_winterspring": {
+      "effect": "snow",
+      "name": "Winterspring",
+      "motion": "subtle",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#91C8D3",
+            "#9AD1DC"
+          ],
+          "brightness": [
+            48.0,
+            52.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#91C8D3",
+            "#9AD1DC"
+          ],
+          "brightness": [
+            46.0,
+            50.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#779FCD",
+            "#80A8D6"
+          ],
+          "brightness": [
+            37.0,
+            41.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#779FCD",
+            "#80A8D6"
+          ],
+          "brightness": [
+            34.0,
+            38.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#A99BBD",
+            "#B2A4C6"
+          ],
+          "brightness": [
+            18.0,
+            22.0
+          ]
+        }
+      }
+    },
+    "wow_moonglade": {
+      "effect": "forest",
+      "name": "Moonglade",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#4F7A63",
+            "#58836C"
+          ],
+          "brightness": [
+            27.0,
+            33.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#4F7A63",
+            "#58836C"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#567A9D",
+            "#5F83A6"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#567A9D",
+            "#5F83A6"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#665482",
+            "#6F5D8B"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_desolace": {
+      "effect": "default",
+      "name": "Desolace",
+      "motion": "static",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#82768A",
+            "#8B7F93"
+          ],
+          "brightness": [
+            27.0,
+            33.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#82768A",
+            "#8B7F93"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#93816A",
+            "#9C8A73"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#93816A",
+            "#9C8A73"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#677F91",
+            "#70889A"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_feralas": {
+      "effect": "forest",
+      "name": "Feralas",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#316F4F",
+            "#3A7858"
+          ],
+          "brightness": [
+            29.0,
+            35.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#316F4F",
+            "#3A7858"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3F7774",
+            "#48807D"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3F7774",
+            "#48807D"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#5B4772",
+            "#64507B"
+          ],
+          "brightness": [
+            10.0,
+            16.0
+          ]
+        }
+      }
+    },
+    "wow_dustwallow_marsh": {
+      "effect": "haunted",
+      "name": "Dustwallow Marsh",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3B6864",
+            "#44716D"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3B6864",
+            "#44716D"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#647049",
+            "#6D7952"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#647049",
+            "#6D7952"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#896632",
+            "#926F3B"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_thousand_needles": {
+      "effect": "default",
+      "name": "Thousand Needles",
+      "motion": "static",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BC8551",
+            "#C58E5A"
+          ],
+          "brightness": [
+            40.0,
+            46.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#BC8551",
+            "#C58E5A"
+          ],
+          "brightness": [
+            38.0,
+            44.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C2A45C",
+            "#CBAD65"
+          ],
+          "brightness": [
+            31.0,
+            37.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C2A45C",
+            "#CBAD65"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#99594B",
+            "#A26254"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "wow_tanaris": {
+      "effect": "default",
+      "name": "Tanaris",
+      "motion": "static",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#CCAD61",
+            "#D5B66A"
+          ],
+          "brightness": [
+            45.0,
+            51.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#CCAD61",
+            "#D5B66A"
+          ],
+          "brightness": [
+            43.0,
+            49.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C78B4B",
+            "#D09454"
+          ],
+          "brightness": [
+            34.0,
+            40.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C78B4B",
+            "#D09454"
+          ],
+          "brightness": [
+            32.0,
+            38.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#9B7036",
+            "#A4793F"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        }
+      }
+    },
+    "wow_un_goro_crater": {
+      "effect": "forest",
+      "name": "Un'Goro Crater",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3E874B",
+            "#479054"
+          ],
+          "brightness": [
+            35.0,
+            41.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3E874B",
+            "#479054"
+          ],
+          "brightness": [
+            33.0,
+            39.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C47838",
+            "#CD8141"
+          ],
+          "brightness": [
+            27.0,
+            33.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C47838",
+            "#CD8141"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#286148",
+            "#316A51"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "wow_silithus": {
+      "effect": "default",
+      "name": "Silithus",
+      "motion": "static",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B7A450",
+            "#C0AD59"
+          ],
+          "brightness": [
+            34.0,
+            40.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B7A450",
+            "#C0AD59"
+          ],
+          "brightness": [
+            33.0,
+            39.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#79587F",
+            "#826188"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#79587F",
+            "#826188"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#4D3C62",
+            "#56456B"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "wow_shen_dralas": {
+      "effect": "arcane",
+      "name": "Shen'dralas",
+      "motion": "active",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#7A5C9B",
+            "#8365A4"
+          ],
+          "brightness": [
+            32.0,
+            38.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#7A5C9B",
+            "#8365A4"
+          ],
+          "brightness": [
+            31.0,
+            37.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#937651",
+            "#9C7F5A"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#937651",
+            "#9C7F5A"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#4C7BA9",
+            "#5584B2"
+          ],
+          "brightness": [
+            11.0,
+            17.0
+          ]
+        }
+      }
+    },
+    "wow_mount_hyjal": {
+      "effect": "forest",
+      "name": "Mount Hyjal",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#427A50",
+            "#4B8359"
+          ],
+          "brightness": [
+            35.0,
+            41.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#427A50",
+            "#4B8359"
+          ],
+          "brightness": [
+            33.0,
+            39.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#52789E",
+            "#5B81A7"
+          ],
+          "brightness": [
+            27.0,
+            33.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#52789E",
+            "#5B81A7"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#C2AD66",
+            "#CBB66F"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "wow_zephras_isle": {
+      "effect": "arcane",
+      "name": "Zephras Isle",
+      "motion": "active",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#78BECD",
+            "#81C7D6"
+          ],
+          "brightness": [
+            49.0,
+            55.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#78BECD",
+            "#81C7D6"
+          ],
+          "brightness": [
+            47.0,
+            53.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A594CA",
+            "#AE9DD3"
+          ],
+          "brightness": [
+            38.0,
+            44.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A594CA",
+            "#AE9DD3"
+          ],
+          "brightness": [
+            35.0,
+            41.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#B2C6D5",
+            "#BBCFDE"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        }
+      }
+    },
+    "wow_ironforge": {
+      "effect": "embers",
+      "name": "Ironforge",
+      "motion": "active",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BF6E35",
+            "#C8773E"
+          ],
+          "brightness": [
+            34.0,
+            42.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#BF6E35",
+            "#C8773E"
+          ],
+          "brightness": [
+            32.0,
+            40.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A18053",
+            "#AA895C"
+          ],
+          "brightness": [
+            26.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A18053",
+            "#AA895C"
+          ],
+          "brightness": [
+            24.0,
+            32.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#693C29",
+            "#724532"
+          ],
+          "brightness": [
+            11.0,
+            19.0
+          ]
+        }
+      }
+    },
+    "wow_darnassus": {
+      "effect": "forest",
+      "name": "Darnassus",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#68558E",
+            "#715E97"
+          ],
+          "brightness": [
+            29.0,
+            35.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#68558E",
+            "#715E97"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#59816A",
+            "#628A73"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#59816A",
+            "#628A73"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#6C8EAE",
+            "#7597B7"
+          ],
+          "brightness": [
+            10.0,
+            16.0
+          ]
+        }
+      }
+    },
+    "wow_orgrimmar": {
+      "effect": "embers",
+      "name": "Orgrimmar",
+      "motion": "active",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A84032",
+            "#B1493B"
+          ],
+          "brightness": [
+            32.0,
+            40.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A84032",
+            "#B1493B"
+          ],
+          "brightness": [
+            31.0,
+            39.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C27A37",
+            "#CB8340"
+          ],
+          "brightness": [
+            24.0,
+            32.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C27A37",
+            "#CB8340"
+          ],
+          "brightness": [
+            22.0,
+            30.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#6A2D29",
+            "#733632"
+          ],
+          "brightness": [
+            10.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "wow_thunder_bluff": {
+      "effect": "default",
+      "name": "Thunder Bluff",
+      "motion": "subtle",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B7A25C",
+            "#C0AB65"
+          ],
+          "brightness": [
+            39.0,
+            45.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B7A25C",
+            "#C0AB65"
+          ],
+          "brightness": [
+            37.0,
+            43.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#718952",
+            "#7A925B"
+          ],
+          "brightness": [
+            30.0,
+            36.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#718952",
+            "#7A925B"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#BA854D",
+            "#C38E56"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "wow_undercity": {
+      "effect": "haunted",
+      "name": "Undercity",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#648045",
+            "#6D894E"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#648045",
+            "#6D894E"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#624B78",
+            "#6B5481"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#624B78",
+            "#6B5481"
+          ],
+          "brightness": [
+            13.0,
+            19.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#304838",
+            "#395141"
+          ],
+          "brightness": [
+            6.0,
+            12.0
+          ]
+        }
+      }
+    },
+    "wow_ragefire_chasm": {
+      "effect": "embers",
+      "name": "Ragefire Chasm",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C76529",
+            "#D06E32"
+          ],
+          "brightness": [
+            24.0,
+            32.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C76529",
+            "#D06E32"
+          ],
+          "brightness": [
+            23.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8E3026",
+            "#97392F"
+          ],
+          "brightness": [
+            18.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8E3026",
+            "#97392F"
+          ],
+          "brightness": [
+            16.0,
+            24.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#6B3D22",
+            "#74462B"
+          ],
+          "brightness": [
+            7.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_wailing_caverns": {
+      "effect": "forest",
+      "name": "Wailing Caverns",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#44704A",
+            "#4D7953"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#44704A",
+            "#4D7953"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3B797B",
+            "#448284"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3B797B",
+            "#448284"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#2B4833",
+            "#34513C"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_shadowfang_keep": {
+      "effect": "haunted",
+      "name": "Shadowfang Keep",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#4D7399",
+            "#567CA2"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#4D7399",
+            "#567CA2"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#6A5387",
+            "#735C90"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#6A5387",
+            "#735C90"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#342A4C",
+            "#3D3355"
+          ],
+          "brightness": [
+            6.0,
+            12.0
+          ]
+        }
+      }
+    },
+    "wow_blackfathom_deeps": {
+      "effect": "haunted",
+      "name": "Blackfathom Deeps",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#345B7E",
+            "#3D6487"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#345B7E",
+            "#3D6487"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3A797C",
+            "#438285"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3A797C",
+            "#438285"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#3D305A",
+            "#463963"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_the_stockade": {
+      "effect": "default",
+      "name": "The Stockade",
+      "motion": "subtle",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B08A4B",
+            "#B99354"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B08A4B",
+            "#B99354"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#677D88",
+            "#708691"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#677D88",
+            "#708691"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#895C36",
+            "#92653F"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_gnomeregan": {
+      "effect": "arcane",
+      "name": "Gnomeregan",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#50959E",
+            "#599EA7"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#50959E",
+            "#599EA7"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B97D3F",
+            "#C28648"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B97D3F",
+            "#C28648"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#6D8C3B",
+            "#769544"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_razorfen_kraul": {
+      "effect": "forest",
+      "name": "Razorfen Kraul",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8D704D",
+            "#967956"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8D704D",
+            "#967956"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#576A3D",
+            "#607346"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#576A3D",
+            "#607346"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#9C6735",
+            "#A5703E"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_razorfen_downs": {
+      "effect": "haunted",
+      "name": "Razorfen Downs",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#6C4B7E",
+            "#755487"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#6C4B7E",
+            "#755487"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#7D96AD",
+            "#869FB6"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#7D96AD",
+            "#869FB6"
+          ],
+          "brightness": [
+            13.0,
+            19.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#382846",
+            "#41314F"
+          ],
+          "brightness": [
+            6.0,
+            12.0
+          ]
+        }
+      }
+    },
+    "wow_scarlet_monastery_graveyard": {
+      "effect": "haunted",
+      "name": "Scarlet Monastery — Graveyard",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#63517D",
+            "#6C5A86"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#63517D",
+            "#6C5A86"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#55779B",
+            "#5E80A4"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#55779B",
+            "#5E80A4"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#8A3839",
+            "#934142"
+          ],
+          "brightness": [
+            6.0,
+            12.0
+          ]
+        }
+      }
+    },
+    "wow_scarlet_monastery_library": {
+      "effect": "default",
+      "name": "Scarlet Monastery — Library",
+      "motion": "subtle",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A9403C",
+            "#B24945"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A9403C",
+            "#B24945"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BD9859",
+            "#C6A162"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#BD9859",
+            "#C6A162"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#6B2E32",
+            "#74373B"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_scarlet_monastery_armory": {
+      "effect": "embers",
+      "name": "Scarlet Monastery — Armory",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#9B393C",
+            "#A44245"
+          ],
+          "brightness": [
+            24.0,
+            32.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#9B393C",
+            "#A44245"
+          ],
+          "brightness": [
+            23.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#7F8793",
+            "#88909C"
+          ],
+          "brightness": [
+            18.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#7F8793",
+            "#88909C"
+          ],
+          "brightness": [
+            16.0,
+            24.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#B9703C",
+            "#C27945"
+          ],
+          "brightness": [
+            7.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_scarlet_monastery_cathedral": {
+      "effect": "default",
+      "name": "Scarlet Monastery — Cathedral",
+      "motion": "subtle",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A44243",
+            "#AD4B4C"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A44243",
+            "#AD4B4C"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C6AC63",
+            "#CFB56C"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C6AC63",
+            "#CFB56C"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#702C34",
+            "#79353D"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_uldaman": {
+      "effect": "arcane",
+      "name": "Uldaman",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B39A59",
+            "#BCA362"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B39A59",
+            "#BCA362"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#678F97",
+            "#7098A0"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#678F97",
+            "#7098A0"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#786047",
+            "#816950"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_zul_farrak": {
+      "effect": "default",
+      "name": "Zul'Farrak",
+      "motion": "subtle",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B79A4F",
+            "#C0A358"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B79A4F",
+            "#C0A358"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#62804A",
+            "#6B8953"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#62804A",
+            "#6B8953"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#AC633D",
+            "#B56C46"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_maraudon": {
+      "effect": "forest",
+      "name": "Maraudon",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#4F794A",
+            "#588253"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#4F794A",
+            "#588253"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8766A0",
+            "#906FA9"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8766A0",
+            "#906FA9"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#365B77",
+            "#3F6480"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_temple_of_atal_hakkar": {
+      "effect": "haunted",
+      "name": "Temple of Atal'Hakkar",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#4E693D",
+            "#577246"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#4E693D",
+            "#577246"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3E7770",
+            "#478079"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3E7770",
+            "#478079"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#6A4B7B",
+            "#735484"
+          ],
+          "brightness": [
+            6.0,
+            12.0
+          ]
+        }
+      }
+    },
+    "wow_blackrock_depths": {
+      "effect": "embers",
+      "name": "Blackrock Depths",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C17435",
+            "#CA7D3E"
+          ],
+          "brightness": [
+            24.0,
+            32.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C17435",
+            "#CA7D3E"
+          ],
+          "brightness": [
+            23.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8F4435",
+            "#984D3E"
+          ],
+          "brightness": [
+            18.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8F4435",
+            "#984D3E"
+          ],
+          "brightness": [
+            16.0,
+            24.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#5E2C29",
+            "#673532"
+          ],
+          "brightness": [
+            7.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_lower_blackrock_spire": {
+      "effect": "embers",
+      "name": "Lower Blackrock Spire",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#A14932",
+            "#AA523B"
+          ],
+          "brightness": [
+            21.0,
+            29.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A14932",
+            "#AA523B"
+          ],
+          "brightness": [
+            20.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#514A48",
+            "#5A5351"
+          ],
+          "brightness": [
+            16.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#514A48",
+            "#5A5351"
+          ],
+          "brightness": [
+            14.0,
+            22.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#B77439",
+            "#C07D42"
+          ],
+          "brightness": [
+            6.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_upper_blackrock_spire": {
+      "effect": "embers",
+      "name": "Upper Blackrock Spire",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#AA3C30",
+            "#B34539"
+          ],
+          "brightness": [
+            24.0,
+            32.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#AA3C30",
+            "#B34539"
+          ],
+          "brightness": [
+            23.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C97B34",
+            "#D2843D"
+          ],
+          "brightness": [
+            18.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C97B34",
+            "#D2843D"
+          ],
+          "brightness": [
+            16.0,
+            24.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#4F2929",
+            "#583232"
+          ],
+          "brightness": [
+            7.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_scholomance": {
+      "effect": "haunted",
+      "name": "Scholomance",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#6B4B89",
+            "#745492"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#6B4B89",
+            "#745492"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#627444",
+            "#6B7D4D"
+          ],
+          "brightness": [
+            11.0,
+            17.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#627444",
+            "#6B7D4D"
+          ],
+          "brightness": [
+            10.0,
+            16.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#263649",
+            "#2F3F52"
+          ],
+          "brightness": [
+            4.0,
+            10.0
+          ]
+        }
+      }
+    },
+    "wow_stratholme": {
+      "effect": "embers",
+      "name": "Stratholme",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BC7336",
+            "#C57C3F"
+          ],
+          "brightness": [
+            22.0,
+            30.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#BC7336",
+            "#C57C3F"
+          ],
+          "brightness": [
+            21.0,
+            29.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#738249",
+            "#7C8B52"
+          ],
+          "brightness": [
+            16.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#738249",
+            "#7C8B52"
+          ],
+          "brightness": [
+            15.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#612F2B",
+            "#6A3834"
+          ],
+          "brightness": [
+            6.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_dire_maul_east": {
+      "effect": "forest",
+      "name": "Dire Maul East",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#4D7948",
+            "#568251"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#4D7948",
+            "#568251"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#7B5C94",
+            "#84659D"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#7B5C94",
+            "#84659D"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#2C4A35",
+            "#35533E"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_dire_maul_west": {
+      "effect": "arcane",
+      "name": "Dire Maul West",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#7C5E9D",
+            "#8567A6"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#7C5E9D",
+            "#8567A6"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#52799E",
+            "#5B82A7"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#52799E",
+            "#5B82A7"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#564272",
+            "#5F4B7B"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_dire_maul_north": {
+      "effect": "default",
+      "name": "Dire Maul North",
+      "motion": "subtle",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#AA7947",
+            "#B38250"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#AA7947",
+            "#B38250"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#82705B",
+            "#8B7964"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#82705B",
+            "#8B7964"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#B48A43",
+            "#BD934C"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_hall_of_thanes": {
+      "effect": "haunted",
+      "name": "Hall of Thanes",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B49A56",
+            "#BDA35F"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B49A56",
+            "#BDA35F"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#6484A7",
+            "#6D8DB0"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#6484A7",
+            "#6D8DB0"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#A87C40",
+            "#B18549"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_ruins_of_lordaeron": {
+      "effect": "haunted",
+      "name": "Ruins of Lordaeron",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#6D5182",
+            "#765A8B"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#6D5182",
+            "#765A8B"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#718349",
+            "#7A8C52"
+          ],
+          "brightness": [
+            14.0,
+            20.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#718349",
+            "#7A8C52"
+          ],
+          "brightness": [
+            13.0,
+            19.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#486D91",
+            "#51769A"
+          ],
+          "brightness": [
+            6.0,
+            12.0
+          ]
+        }
+      }
+    },
+    "wow_excavation_site_wetlands": {
+      "effect": "default",
+      "name": "Excavation Site: Wetlands",
+      "motion": "subtle",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B28D4D",
+            "#BB9656"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B28D4D",
+            "#BB9656"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#5E7C8A",
+            "#678593"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#5E7C8A",
+            "#678593"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#7C624A",
+            "#856B53"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_city_of_dalaran": {
+      "effect": "arcane",
+      "name": "City of Dalaran",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8466AF",
+            "#8D6FB8"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8466AF",
+            "#8D6FB8"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#4C85B6",
+            "#558EBF"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#4C85B6",
+            "#558EBF"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#A66C9B",
+            "#AF75A4"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_the_drowned_city": {
+      "effect": "haunted",
+      "name": "The Drowned City",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3C7A7E",
+            "#458387"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3C7A7E",
+            "#458387"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#557A4B",
+            "#5E8354"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#557A4B",
+            "#5E8354"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#284B73",
+            "#31547C"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_krol_dok_stronghold": {
+      "effect": "embers",
+      "name": "Krol'dok Stronghold",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B57B43",
+            "#BE844C"
+          ],
+          "brightness": [
+            23.0,
+            31.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B57B43",
+            "#BE844C"
+          ],
+          "brightness": [
+            22.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#67804D",
+            "#708956"
+          ],
+          "brightness": [
+            17.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#67804D",
+            "#708956"
+          ],
+          "brightness": [
+            16.0,
+            24.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#805134",
+            "#895A3D"
+          ],
+          "brightness": [
+            7.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_alcaz_prison": {
+      "effect": "haunted",
+      "name": "Alcaz Prison",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#567C99",
+            "#5F85A2"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#567C99",
+            "#5F85A2"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#994B43",
+            "#A2544C"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#994B43",
+            "#A2544C"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#765735",
+            "#7F603E"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_blackmaw_hold": {
+      "effect": "haunted",
+      "name": "Blackmaw Hold",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#476B44",
+            "#50744D"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#476B44",
+            "#50744D"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#77568C",
+            "#805F95"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#77568C",
+            "#805F95"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#7B873E",
+            "#849047"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_shaper_s_terrace": {
+      "effect": "arcane",
+      "name": "Shaper's Terrace",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#61A3AF",
+            "#6AACB8"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#61A3AF",
+            "#6AACB8"
+          ],
+          "brightness": [
+            24.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B29C57",
+            "#BBA560"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B29C57",
+            "#BBA560"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#3C6188",
+            "#456A91"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_barrow_deeps": {
+      "effect": "haunted",
+      "name": "Barrow Deeps",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#365C40",
+            "#3F6549"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#614576",
+            "#6A4E7F"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#45678C",
+            "#4E7095"
+          ],
+          "brightness": [
+            13.0,
+            19.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#907039",
+            "#997942"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#2C203B",
+            "#352944"
+          ],
+          "brightness": [
+            5.0,
+            11.0
+          ]
+        }
+      }
+    },
+    "wow_hyjal_summit": {
+      "effect": "forest",
+      "name": "Hyjal Summit",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#337B52",
+            "#3C845B"
+          ],
+          "brightness": [
+            29.0,
+            35.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#507A9F",
+            "#5983A8"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BDA65D",
+            "#C6AF66"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#2F513B",
+            "#385A44"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#699E92",
+            "#72A79B"
+          ],
+          "brightness": [
+            10.0,
+            16.0
+          ]
+        }
+      }
+    },
+    "wow_warsong_gulch": {
+      "effect": "forest",
+      "name": "Warsong Gulch",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#4A794B",
+            "#538254"
+          ],
+          "brightness": [
+            33.0,
+            39.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#4A794B",
+            "#538254"
+          ],
+          "brightness": [
+            32.0,
+            38.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#9E4C43",
+            "#A7554C"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#9E4C43",
+            "#A7554C"
+          ],
+          "brightness": [
+            23.0,
+            29.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#3D597C",
+            "#466285"
+          ],
+          "brightness": [
+            11.0,
+            17.0
+          ]
+        }
+      }
+    },
+    "wow_arathi_basin": {
+      "effect": "forest",
+      "name": "Arathi Basin",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#63894B",
+            "#6C9254"
+          ],
+          "brightness": [
+            37.0,
+            43.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#63894B",
+            "#6C9254"
+          ],
+          "brightness": [
+            35.0,
+            41.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B99B52",
+            "#C2A45B"
+          ],
+          "brightness": [
+            28.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B99B52",
+            "#C2A45B"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#668EA8",
+            "#6F97B1"
+          ],
+          "brightness": [
+            13.0,
+            19.0
+          ]
+        }
+      }
+    },
+    "wow_darkspear_islands": {
+      "effect": "forest",
+      "name": "Darkspear Islands",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3D9690",
+            "#469F99"
+          ],
+          "brightness": [
+            35.0,
+            41.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3D9690",
+            "#469F99"
+          ],
+          "brightness": [
+            33.0,
+            39.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#BC7338",
+            "#C57C41"
+          ],
+          "brightness": [
+            27.0,
+            33.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#BC7338",
+            "#C57C41"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#3E7948",
+            "#478251"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "wow_molten_core": {
+      "effect": "embers",
+      "name": "Molten Core",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B64F28",
+            "#BF5831"
+          ],
+          "brightness": [
+            26.0,
+            34.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B64F28",
+            "#BF5831"
+          ],
+          "brightness": [
+            25.0,
+            33.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C47A32",
+            "#CD833B"
+          ],
+          "brightness": [
+            19.0,
+            27.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#C47A32",
+            "#CD833B"
+          ],
+          "brightness": [
+            18.0,
+            26.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#612B25",
+            "#6A342E"
+          ],
+          "brightness": [
+            8.0,
+            16.0
+          ]
+        }
+      }
+    },
+    "wow_blackwing_lair": {
+      "effect": "embers",
+      "name": "Blackwing Lair",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#9A3431",
+            "#A33D3A"
+          ],
+          "brightness": [
+            22.0,
+            30.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#9A3431",
+            "#A33D3A"
+          ],
+          "brightness": [
+            21.0,
+            29.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B86A32",
+            "#C1733B"
+          ],
+          "brightness": [
+            16.0,
+            24.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B86A32",
+            "#C1733B"
+          ],
+          "brightness": [
+            15.0,
+            23.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#492B38",
+            "#523441"
+          ],
+          "brightness": [
+            6.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "wow_zul_gurub": {
+      "effect": "forest",
+      "name": "Zul'Gurub",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3F784A",
+            "#488153"
+          ],
+          "brightness": [
+            27.0,
+            33.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#3F784A",
+            "#488153"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B59245",
+            "#BE9B4E"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B59245",
+            "#BE9B4E"
+          ],
+          "brightness": [
+            19.0,
+            25.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#513D69",
+            "#5A4672"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_ruins_of_ahn_qiraj": {
+      "effect": "arcane",
+      "name": "Ruins of Ahn'Qiraj",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B19B51",
+            "#BAA45A"
+          ],
+          "brightness": [
+            26.0,
+            32.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B19B51",
+            "#BAA45A"
+          ],
+          "brightness": [
+            25.0,
+            31.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#66958F",
+            "#6F9E98"
+          ],
+          "brightness": [
+            20.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#66958F",
+            "#6F9E98"
+          ],
+          "brightness": [
+            18.0,
+            24.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#766084",
+            "#7F698D"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "wow_temple_of_ahn_qiraj": {
+      "effect": "arcane",
+      "name": "Temple of Ahn'Qiraj",
+      "motion": "active",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#819052",
+            "#8A995B"
+          ],
+          "brightness": [
+            22.0,
+            28.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#819052",
+            "#8A995B"
+          ],
+          "brightness": [
+            21.0,
+            27.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#5C8E8A",
+            "#659793"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#5C8E8A",
+            "#659793"
+          ],
+          "brightness": [
+            15.0,
+            21.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#695080",
+            "#725989"
+          ],
+          "brightness": [
+            7.0,
+            13.0
+          ]
+        }
+      }
+    },
+    "wow_naxxramas": {
+      "effect": "haunted",
+      "name": "Naxxramas",
+      "motion": "ambient",
+      "transition_seconds": 2.5,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#59799C",
+            "#6282A5"
+          ],
+          "brightness": [
+            17.0,
+            23.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#59799C",
+            "#6282A5"
+          ],
+          "brightness": [
+            16.0,
+            22.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#64834D",
+            "#6D8C56"
+          ],
+          "brightness": [
+            13.0,
+            19.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#64834D",
+            "#6D8C56"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#57406D",
+            "#604976"
+          ],
+          "brightness": [
+            5.0,
+            11.0
+          ]
+        }
+      }
+    },
+    "valheim_meadows": {
+      "effect": "default",
+      "name": "Meadows",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#59844B",
+            "#628D50"
+          ],
+          "brightness": [
+            38.0,
+            44.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#5A8249",
+            "#6C904F"
+          ],
+          "brightness": [
+            36.0,
+            43.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C59A4A",
+            "#D1A351"
+          ],
+          "brightness": [
+            28.0,
+            35.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B9893D",
+            "#C89A49"
+          ],
+          "brightness": [
+            25.0,
+            34.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#8D6537",
+            "#9A7040"
+          ],
+          "brightness": [
+            12.0,
+            18.0
+          ]
+        }
+      }
+    },
+    "valheim_black_forest": {
+      "effect": "default",
+      "name": "Black Forest",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#244F36",
+            "#2D5A3C",
+            "#356246"
+          ],
+          "brightness": [
+            28.0,
+            35.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#1E4632",
+            "#28573D"
+          ],
+          "brightness": [
+            27.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#344B65",
+            "#3C5673"
+          ],
+          "brightness": [
+            18.0,
+            25.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#2D5360",
+            "#365F69"
+          ],
+          "brightness": [
+            20.0,
+            28.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#163226",
+            "#1D3A2A"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "valheim_swamp": {
+      "effect": "default",
+      "name": "Swamp",
+      "motion": "ambient",
+      "transition_seconds": 3.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3F5D35",
+            "#4C6939"
+          ],
+          "brightness": [
+            22.0,
+            30.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#34574E",
+            "#41655A"
+          ],
+          "brightness": [
+            20.0,
+            28.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#3C5252",
+            "#46615B"
+          ],
+          "brightness": [
+            18.0,
+            26.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#4D5131",
+            "#585C35"
+          ],
+          "brightness": [
+            18.0,
+            25.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#302B38",
+            "#3A3341"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    },
+    "valheim_mountain": {
+      "effect": "default",
+      "name": "Mountain",
+      "motion": "subtle",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8EB9CD",
+            "#A0CADB"
+          ],
+          "brightness": [
+            38.0,
+            48.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#769FBD",
+            "#88AEC8"
+          ],
+          "brightness": [
+            36.0,
+            46.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C4D8E1",
+            "#D0E2E8"
+          ],
+          "brightness": [
+            30.0,
+            40.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#8E9FC3",
+            "#A2AED0"
+          ],
+          "brightness": [
+            28.0,
+            38.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#7A86A5",
+            "#8E97B3"
+          ],
+          "brightness": [
+            12.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "valheim_plains": {
+      "effect": "default",
+      "name": "Plains",
+      "motion": "subtle",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#B69A3A",
+            "#C3A846"
+          ],
+          "brightness": [
+            38.0,
+            46.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#9E903A",
+            "#ADA042"
+          ],
+          "brightness": [
+            35.0,
+            44.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#D0A44A",
+            "#DAB157"
+          ],
+          "brightness": [
+            30.0,
+            38.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#7F8337",
+            "#8B913B"
+          ],
+          "brightness": [
+            28.0,
+            36.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#9A6031",
+            "#A86B37"
+          ],
+          "brightness": [
+            13.0,
+            20.0
+          ]
+        }
+      }
+    },
+    "valheim_mistlands": {
+      "effect": "default",
+      "name": "Mistlands",
+      "motion": "ambient",
+      "transition_seconds": 3.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#604C7F",
+            "#6B568C"
+          ],
+          "brightness": [
+            26.0,
+            34.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#385F75",
+            "#426D82"
+          ],
+          "brightness": [
+            25.0,
+            33.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#39716C",
+            "#447C76"
+          ],
+          "brightness": [
+            22.0,
+            30.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#54416D",
+            "#654D7E"
+          ],
+          "brightness": [
+            22.0,
+            30.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#332741",
+            "#3C2C4B"
+          ],
+          "brightness": [
+            9.0,
+            15.0
+          ]
+        }
+      }
+    },
+    "valheim_ashlands": {
+      "effect": "default",
+      "name": "Ashlands",
+      "motion": "active",
+      "transition_seconds": 2.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8B201B",
+            "#A82B1F"
+          ],
+          "brightness": [
+            30.0,
+            40.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#B9441D",
+            "#D25A22"
+          ],
+          "brightness": [
+            32.0,
+            44.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#6F1818",
+            "#8C201A"
+          ],
+          "brightness": [
+            24.0,
+            34.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#A63C1B",
+            "#C14D1F"
+          ],
+          "brightness": [
+            27.0,
+            38.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#4A1215",
+            "#5B1717"
+          ],
+          "brightness": [
+            10.0,
+            17.0
+          ]
+        }
+      }
+    },
+    "valheim_deep_north": {
+      "effect": "default",
+      "name": "Deep North",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#8DCBD9",
+            "#A0D7E1"
+          ],
+          "brightness": [
+            38.0,
+            48.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#79B8CC",
+            "#8CC8D8"
+          ],
+          "brightness": [
+            36.0,
+            46.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#C1DDE4",
+            "#D0E8EC"
+          ],
+          "brightness": [
+            32.0,
+            42.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#839EC2",
+            "#97ADD0"
+          ],
+          "brightness": [
+            28.0,
+            38.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#7184A0",
+            "#8293AB"
+          ],
+          "brightness": [
+            12.0,
+            19.0
+          ]
+        }
+      }
+    },
+    "valheim_ocean": {
+      "effect": "default",
+      "name": "Ocean",
+      "motion": "ambient",
+      "transition_seconds": 4.0,
+      "lights": {
+        "rectangle_front_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#174A68",
+            "#1C5678"
+          ],
+          "brightness": [
+            25.0,
+            34.0
+          ]
+        },
+        "rectangle_front_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#1D5B71",
+            "#256A81"
+          ],
+          "brightness": [
+            24.0,
+            33.0
+          ]
+        },
+        "rectangle_rear_left": {
+          "interval_seconds": null,
+          "palette": [
+            "#24788A",
+            "#2F8798"
+          ],
+          "brightness": [
+            20.0,
+            29.0
+          ]
+        },
+        "rectangle_rear_right": {
+          "interval_seconds": null,
+          "palette": [
+            "#214E6B",
+            "#295B78"
+          ],
+          "brightness": [
+            21.0,
+            30.0
+          ]
+        },
+        "bedside": {
+          "interval_seconds": null,
+          "palette": [
+            "#183247",
+            "#1E3B50"
+          ],
+          "brightness": [
+            8.0,
+            14.0
+          ]
+        }
+      }
+    }
+  },
+  "games": {
+    "wow": {
+      "name": "World of Warcraft",
+      "events": {
+        "stormwind": {
+          "scene": "wow_stormwind",
+          "names": [
+            "Stormwind City"
+          ],
+          "map_ids": [],
+          "category": "city"
+        },
+        "deadmines": {
+          "scene": "wow_deadmines",
+          "names": [
+            "The Deadmines",
+            "Deadmines"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "alterac_valley": {
+          "scene": "wow_alterac_valley",
+          "names": [
+            "Alterac Valley"
+          ],
+          "map_ids": [],
+          "category": "battleground"
+        },
+        "elwynn_forest": {
+          "scene": "wow_elwynn_forest",
+          "names": [
+            "Elwynn Forest"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "westfall": {
+          "scene": "wow_westfall",
+          "names": [
+            "Westfall"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "duskwood": {
+          "scene": "wow_duskwood",
+          "names": [
+            "Duskwood"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "stranglethorn_vale": {
+          "scene": "wow_stranglethorn_vale",
+          "names": [
+            "Stranglethorn Vale"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "onyxias_lair": {
+          "scene": "wow_onyxias_lair",
+          "names": [
+            "Onyxia's Lair"
+          ],
+          "map_ids": [],
+          "category": "raid"
+        },
+        "neutral": {
+          "scene": "wow_neutral",
+          "names": [
+            "Neutral"
+          ],
+          "map_ids": [],
+          "category": "neutral"
+        },
+        "redridge_mountains": {
+          "scene": "wow_redridge_mountains",
+          "names": [
+            "Redridge Mountains"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "deadwind_pass": {
+          "scene": "wow_deadwind_pass",
+          "names": [
+            "Deadwind Pass"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "swamp_of_sorrows": {
+          "scene": "wow_swamp_of_sorrows",
+          "names": [
+            "Swamp of Sorrows"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "blasted_lands": {
+          "scene": "wow_blasted_lands",
+          "names": [
+            "Blasted Lands"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "burning_steppes": {
+          "scene": "wow_burning_steppes",
+          "names": [
+            "Burning Steppes"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "searing_gorge": {
+          "scene": "wow_searing_gorge",
+          "names": [
+            "Searing Gorge"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "badlands": {
+          "scene": "wow_badlands",
+          "names": [
+            "Badlands"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "loch_modan": {
+          "scene": "wow_loch_modan",
+          "names": [
+            "Loch Modan"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "dun_morogh": {
+          "scene": "wow_dun_morogh",
+          "names": [
+            "Dun Morogh"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "wetlands": {
+          "scene": "wow_wetlands",
+          "names": [
+            "Wetlands"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "arathi_highlands": {
+          "scene": "wow_arathi_highlands",
+          "names": [
+            "Arathi Highlands"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "hillsbrad_foothills": {
+          "scene": "wow_hillsbrad_foothills",
+          "names": [
+            "Hillsbrad Foothills"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "alterac_mountains": {
+          "scene": "wow_alterac_mountains",
+          "names": [
+            "Alterac Mountains"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "silverpine_forest": {
+          "scene": "wow_silverpine_forest",
+          "names": [
+            "Silverpine Forest"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "tirisfal_glades": {
+          "scene": "wow_tirisfal_glades",
+          "names": [
+            "Tirisfal Glades"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "western_plaguelands": {
+          "scene": "wow_western_plaguelands",
+          "names": [
+            "Western Plaguelands"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "eastern_plaguelands": {
+          "scene": "wow_eastern_plaguelands",
+          "names": [
+            "Eastern Plaguelands"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "the_hinterlands": {
+          "scene": "wow_the_hinterlands",
+          "names": [
+            "The Hinterlands"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "riverglades": {
+          "scene": "wow_riverglades",
+          "names": [
+            "Riverglades"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "durotar": {
+          "scene": "wow_durotar",
+          "names": [
+            "Durotar"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "the_barrens": {
+          "scene": "wow_the_barrens",
+          "names": [
+            "The Barrens"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "mulgore": {
+          "scene": "wow_mulgore",
+          "names": [
+            "Mulgore"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "stonetalon_mountains": {
+          "scene": "wow_stonetalon_mountains",
+          "names": [
+            "Stonetalon Mountains"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "ashenvale": {
+          "scene": "wow_ashenvale",
+          "names": [
+            "Ashenvale"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "darkshore": {
+          "scene": "wow_darkshore",
+          "names": [
+            "Darkshore"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "teldrassil": {
+          "scene": "wow_teldrassil",
+          "names": [
+            "Teldrassil"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "azshara": {
+          "scene": "wow_azshara",
+          "names": [
+            "Azshara"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "felwood": {
+          "scene": "wow_felwood",
+          "names": [
+            "Felwood"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "winterspring": {
+          "scene": "wow_winterspring",
+          "names": [
+            "Winterspring"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "moonglade": {
+          "scene": "wow_moonglade",
+          "names": [
+            "Moonglade"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "desolace": {
+          "scene": "wow_desolace",
+          "names": [
+            "Desolace"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "feralas": {
+          "scene": "wow_feralas",
+          "names": [
+            "Feralas"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "dustwallow_marsh": {
+          "scene": "wow_dustwallow_marsh",
+          "names": [
+            "Dustwallow Marsh"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "thousand_needles": {
+          "scene": "wow_thousand_needles",
+          "names": [
+            "Thousand Needles"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "tanaris": {
+          "scene": "wow_tanaris",
+          "names": [
+            "Tanaris"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "un_goro_crater": {
+          "scene": "wow_un_goro_crater",
+          "names": [
+            "Un'Goro Crater"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "silithus": {
+          "scene": "wow_silithus",
+          "names": [
+            "Silithus"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "shen_dralas": {
+          "scene": "wow_shen_dralas",
+          "names": [
+            "Shen'dralas"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "mount_hyjal": {
+          "scene": "wow_mount_hyjal",
+          "names": [
+            "Mount Hyjal"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "zephras_isle": {
+          "scene": "wow_zephras_isle",
+          "names": [
+            "Zephras Isle"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "ironforge": {
+          "scene": "wow_ironforge",
+          "names": [
+            "Ironforge"
+          ],
+          "map_ids": [],
+          "category": "city"
+        },
+        "darnassus": {
+          "scene": "wow_darnassus",
+          "names": [
+            "Darnassus"
+          ],
+          "map_ids": [],
+          "category": "city"
+        },
+        "orgrimmar": {
+          "scene": "wow_orgrimmar",
+          "names": [
+            "Orgrimmar"
+          ],
+          "map_ids": [],
+          "category": "city"
+        },
+        "thunder_bluff": {
+          "scene": "wow_thunder_bluff",
+          "names": [
+            "Thunder Bluff"
+          ],
+          "map_ids": [],
+          "category": "city"
+        },
+        "undercity": {
+          "scene": "wow_undercity",
+          "names": [
+            "Undercity"
+          ],
+          "map_ids": [],
+          "category": "city"
+        },
+        "ragefire_chasm": {
+          "scene": "wow_ragefire_chasm",
+          "names": [
+            "Ragefire Chasm"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "wailing_caverns": {
+          "scene": "wow_wailing_caverns",
+          "names": [
+            "Wailing Caverns"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "shadowfang_keep": {
+          "scene": "wow_shadowfang_keep",
+          "names": [
+            "Shadowfang Keep"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "blackfathom_deeps": {
+          "scene": "wow_blackfathom_deeps",
+          "names": [
+            "Blackfathom Deeps"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "the_stockade": {
+          "scene": "wow_the_stockade",
+          "names": [
+            "The Stockade"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "gnomeregan": {
+          "scene": "wow_gnomeregan",
+          "names": [
+            "Gnomeregan"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "razorfen_kraul": {
+          "scene": "wow_razorfen_kraul",
+          "names": [
+            "Razorfen Kraul"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "razorfen_downs": {
+          "scene": "wow_razorfen_downs",
+          "names": [
+            "Razorfen Downs"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "scarlet_monastery_graveyard": {
+          "scene": "wow_scarlet_monastery_graveyard",
+          "names": [
+            "Scarlet Monastery — Graveyard"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "scarlet_monastery_library": {
+          "scene": "wow_scarlet_monastery_library",
+          "names": [
+            "Scarlet Monastery — Library"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "scarlet_monastery_armory": {
+          "scene": "wow_scarlet_monastery_armory",
+          "names": [
+            "Scarlet Monastery — Armory"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "scarlet_monastery_cathedral": {
+          "scene": "wow_scarlet_monastery_cathedral",
+          "names": [
+            "Scarlet Monastery — Cathedral"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "uldaman": {
+          "scene": "wow_uldaman",
+          "names": [
+            "Uldaman"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "zul_farrak": {
+          "scene": "wow_zul_farrak",
+          "names": [
+            "Zul'Farrak"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "maraudon": {
+          "scene": "wow_maraudon",
+          "names": [
+            "Maraudon"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "temple_of_atal_hakkar": {
+          "scene": "wow_temple_of_atal_hakkar",
+          "names": [
+            "Temple of Atal'Hakkar"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "blackrock_depths": {
+          "scene": "wow_blackrock_depths",
+          "names": [
+            "Blackrock Depths"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "lower_blackrock_spire": {
+          "scene": "wow_lower_blackrock_spire",
+          "names": [
+            "Lower Blackrock Spire"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "upper_blackrock_spire": {
+          "scene": "wow_upper_blackrock_spire",
+          "names": [
+            "Upper Blackrock Spire"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "scholomance": {
+          "scene": "wow_scholomance",
+          "names": [
+            "Scholomance"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "stratholme": {
+          "scene": "wow_stratholme",
+          "names": [
+            "Stratholme"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "dire_maul_east": {
+          "scene": "wow_dire_maul_east",
+          "names": [
+            "Dire Maul East"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "dire_maul_west": {
+          "scene": "wow_dire_maul_west",
+          "names": [
+            "Dire Maul West"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "dire_maul_north": {
+          "scene": "wow_dire_maul_north",
+          "names": [
+            "Dire Maul North"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "hall_of_thanes": {
+          "scene": "wow_hall_of_thanes",
+          "names": [
+            "Hall of Thanes"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "ruins_of_lordaeron": {
+          "scene": "wow_ruins_of_lordaeron",
+          "names": [
+            "Ruins of Lordaeron"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "excavation_site_wetlands": {
+          "scene": "wow_excavation_site_wetlands",
+          "names": [
+            "Excavation Site: Wetlands"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "city_of_dalaran": {
+          "scene": "wow_city_of_dalaran",
+          "names": [
+            "City of Dalaran"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "the_drowned_city": {
+          "scene": "wow_the_drowned_city",
+          "names": [
+            "The Drowned City"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "krol_dok_stronghold": {
+          "scene": "wow_krol_dok_stronghold",
+          "names": [
+            "Krol'dok Stronghold"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "alcaz_prison": {
+          "scene": "wow_alcaz_prison",
+          "names": [
+            "Alcaz Prison"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "blackmaw_hold": {
+          "scene": "wow_blackmaw_hold",
+          "names": [
+            "Blackmaw Hold"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "shaper_s_terrace": {
+          "scene": "wow_shaper_s_terrace",
+          "names": [
+            "Shaper's Terrace"
+          ],
+          "map_ids": [],
+          "category": "dungeon"
+        },
+        "barrow_deeps": {
+          "scene": "wow_barrow_deeps",
+          "names": [
+            "Barrow Deeps"
+          ],
+          "map_ids": [],
+          "category": "raid"
+        },
+        "hyjal_summit": {
+          "scene": "wow_hyjal_summit",
+          "names": [
+            "Hyjal Summit"
+          ],
+          "map_ids": [],
+          "category": "raid"
+        },
+        "warsong_gulch": {
+          "scene": "wow_warsong_gulch",
+          "names": [
+            "Warsong Gulch"
+          ],
+          "map_ids": [],
+          "category": "battleground"
+        },
+        "arathi_basin": {
+          "scene": "wow_arathi_basin",
+          "names": [
+            "Arathi Basin"
+          ],
+          "map_ids": [],
+          "category": "battleground"
+        },
+        "darkspear_islands": {
+          "scene": "wow_darkspear_islands",
+          "names": [
+            "Darkspear Islands"
+          ],
+          "map_ids": [],
+          "category": "battleground"
+        },
+        "molten_core": {
+          "scene": "wow_molten_core",
+          "names": [
+            "Molten Core"
+          ],
+          "map_ids": [],
+          "category": "raid"
+        },
+        "blackwing_lair": {
+          "scene": "wow_blackwing_lair",
+          "names": [
+            "Blackwing Lair"
+          ],
+          "map_ids": [],
+          "category": "raid"
+        },
+        "zul_gurub": {
+          "scene": "wow_zul_gurub",
+          "names": [
+            "Zul'Gurub"
+          ],
+          "map_ids": [],
+          "category": "raid"
+        },
+        "ruins_of_ahn_qiraj": {
+          "scene": "wow_ruins_of_ahn_qiraj",
+          "names": [
+            "Ruins of Ahn'Qiraj"
+          ],
+          "map_ids": [],
+          "category": "raid"
+        },
+        "temple_of_ahn_qiraj": {
+          "scene": "wow_temple_of_ahn_qiraj",
+          "names": [
+            "Temple of Ahn'Qiraj"
+          ],
+          "map_ids": [],
+          "category": "raid"
+        },
+        "naxxramas": {
+          "scene": "wow_naxxramas",
+          "names": [
+            "Naxxramas"
+          ],
+          "map_ids": [],
+          "category": "raid"
+        }
+      }
+    },
+    "valheim": {
+      "name": "Valheim",
+      "events": {
+        "meadows": {
+          "scene": "valheim_meadows",
+          "names": [
+            "Meadows"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "black_forest": {
+          "scene": "valheim_black_forest",
+          "names": [
+            "Black Forest"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "swamp": {
+          "scene": "valheim_swamp",
+          "names": [
+            "Swamp"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "mountain": {
+          "scene": "valheim_mountain",
+          "names": [
+            "Mountain"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "plains": {
+          "scene": "valheim_plains",
+          "names": [
+            "Plains"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "mistlands": {
+          "scene": "valheim_mistlands",
+          "names": [
+            "Mistlands"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "ashlands": {
+          "scene": "valheim_ashlands",
+          "names": [
+            "Ashlands"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "deep_north": {
+          "scene": "valheim_deep_north",
+          "names": [
+            "Deep North"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        },
+        "ocean": {
+          "scene": "valheim_ocean",
+          "names": [
+            "Ocean"
+          ],
+          "map_ids": [],
+          "category": "zone"
+        }
+      }
+    }
+  }
+}

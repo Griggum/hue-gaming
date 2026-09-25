@@ -19,6 +19,7 @@ def configure(path: Path):
     path.parent.mkdir(parents=True, exist_ok=True)
     handler = RotatingFileHandler(path, maxBytes=1_000_000, backupCount=3, encoding="utf-8")
     handler.setFormatter(JsonFormatter())
-    logger = logging.getLogger("wow_hue")
-    logger.setLevel(logging.INFO)
-    logger.addHandler(handler)
+    for name in ("wow_hue", "hue_core"):
+        logger = logging.getLogger(name)
+        logger.setLevel(logging.INFO)
+        logger.addHandler(handler)

@@ -1,6 +1,11 @@
-# WoW Forever Hue Ambient
+# Hue gaming clients and Pi profile portal
 
-A local Python companion for curated, slow five-light ambience. This first
+The Raspberry Pi portal runs as an ARM64 Docker container on k3s, manages shared
+profiles, and lets you select presets from your phone on Wi-Fi. Gaming clients
+control Hue directly with a synchronized local cache. See the
+[Pi deployment and architecture guide](docs/PI_PORTAL.md) for setup.
+
+The WoW client remains a local Python companion for curated, slow five-light ambience. This first
 implementation provides validated YAML profiles, Hue v2 connectivity, persistent
 light mapping, manual scenes, and independent ambient motion.
 
@@ -16,11 +21,11 @@ test. Minimap OCR is now the primary detector and has no logging/addon dependenc
 From this project directory in PowerShell:
 
 ```powershell
-uv sync --group dev
-uv run wow-hue validate
-uv run wow-hue profiles
-uv run wow-hue profile duskwood --dry-run --seed 42
-uv run pytest
+uv sync --extra gaming --extra server --group dev
+uv run --no-sync wow-hue validate
+uv run --no-sync wow-hue profiles
+uv run --no-sync wow-hue profile duskwood --dry-run --seed 42
+uv run --no-sync pytest
 ```
 
 `--dry-run` makes no network requests and prints the initial five targets.
@@ -47,7 +52,7 @@ not cloud OAuth or Entertainment streaming. If that token is a registration
 To find the bridge IP:
 
 ```powershell
-uv run wow-hue discover
+uv run --no-sync wow-hue discover
 ```
 
 Discovery queries Hue's HTTPS discovery service without sending credentials.
@@ -61,7 +66,7 @@ connection; it is never applied to discovery. HTTP proxy environment variables
 are ignored to keep bridge credentials on the direct connection.
 
 ```powershell
-uv run wow-hue --insecure lights
+uv run --no-sync wow-hue --insecure lights
 ```
 
 This lists v2 resource IDs, names and color capabilities without changing lights.
@@ -71,11 +76,11 @@ This lists v2 resource IDs, names and color capabilities without changing lights
 Use the IDs returned by `lights`, replacing each placeholder:
 
 ```powershell
-uv run wow-hue --insecure map rectangle_front_left RESOURCE_ID_1
-uv run wow-hue --insecure map rectangle_front_right RESOURCE_ID_2
-uv run wow-hue --insecure map rectangle_rear_left RESOURCE_ID_3
-uv run wow-hue --insecure map rectangle_rear_right RESOURCE_ID_4
-uv run wow-hue --insecure map bedside RESOURCE_ID_5
+uv run --no-sync wow-hue --insecure map rectangle_front_left RESOURCE_ID_1
+uv run --no-sync wow-hue --insecure map rectangle_front_right RESOURCE_ID_2
+uv run --no-sync wow-hue --insecure map rectangle_rear_left RESOURCE_ID_3
+uv run --no-sync wow-hue --insecure map rectangle_rear_right RESOURCE_ID_4
+uv run --no-sync wow-hue --insecure map bedside RESOURCE_ID_5
 ```
 
 Mapping checks that the light exists on the bridge and supports dimming. It writes
@@ -89,9 +94,9 @@ receive brightness and transitions only.
 These commands change the five mapped lights:
 
 ```powershell
-uv run wow-hue --insecure profile duskwood
-uv run wow-hue --insecure ambient elwynn_forest --duration 600
-uv run wow-hue --insecure ambient "Onyxia's Lair"
+uv run --no-sync wow-hue --insecure profile duskwood
+uv run --no-sync wow-hue --insecure ambient elwynn_forest --duration 600
+uv run --no-sync wow-hue --insecure ambient "Onyxia's Lair"
 ```
 
 Manual application sends one smooth scene transition. Ambient mode continues
@@ -100,13 +105,14 @@ the lights in their current state; an already-issued Hue transition may finish.
 Restore neutral lighting with:
 
 ```powershell
-uv run wow-hue --insecure profile neutral
+uv run --no-sync wow-hue --insecure profile neutral
 ```
 
 Elwynn Forest, Duskwood and Stranglethorn Vale use the spec's explicit palettes.
 Onyxia's Lair now also uses its explicit five-light specification. Other profiles
 interpret the spec's artistic direction with editable palettes.
-Edit `config/profiles.yaml` to tune palettes, brightness and scene transitions.
+When using the Pi, edit presets in the portal. Without synchronization, edit
+`config/profiles.yaml` to tune palettes, brightness and scene transitions.
 
 Default motion modes have independently randomized per-light timing: static 90–180s,
 subtle 45–120s, ambient 20–90s, active 12–40s. Location-specific effects override
@@ -145,9 +151,9 @@ there are no strobes or synchronized breathing cycles. Initial scene transitions
 retain each profile's configured duration.
 
 ```powershell
-uv run wow-hue --insecure auto --brightness 0.8 --intensity 0.6 --speed 0.75
-uv run wow-hue --insecure ambient onyxias_lair --intensity 0.5
-uv run wow-hue profile winterspring --dry-run --seed 42 --brightness 0.7
+uv run --no-sync wow-hue --insecure auto --brightness 0.8 --intensity 0.6 --speed 0.75
+uv run --no-sync wow-hue --insecure ambient onyxias_lair --intensity 0.5
+uv run --no-sync wow-hue profile winterspring --dry-run --seed 42 --brightness 0.7
 ```
 
 - `--brightness`: 0–1 multiplier on configured brightness; 0 turns mapped lights off.
@@ -185,7 +191,7 @@ installation, cloud OCR, screenshot uploads, addons or combat logging are needed
 Start WoW in windowed or borderless mode, log into a character, and run:
 
 ```powershell
-uv run wow-hue calibrate
+uv run --no-sync wow-hue calibrate
 ```
 
 Switch back to WoW within five seconds. A local still-image window opens; drag a
@@ -201,7 +207,7 @@ message. Recalibrate after changing UI scale or moving the minimap.
 Test detection without touching Hue:
 
 ```powershell
-uv run wow-hue ocr
+uv run --no-sync wow-hue ocr
 ```
 
 The console shows raw OCR text, matched name, parent location, match score, OCR
@@ -211,10 +217,10 @@ front. Switch to WoW to capture, then return to the console to review output.
 Run automatic lighting:
 
 ```powershell
-uv run wow-hue --insecure auto
+uv run --no-sync wow-hue --insecure auto
 # Optional bounded test or simulation:
-uv run wow-hue --insecure auto --duration 120
-uv run wow-hue auto --dry-run --duration 120
+uv run --no-sync wow-hue --insecure auto --duration 120
+uv run --no-sync wow-hue auto --dry-run --duration 120
 ```
 
 Stop any manual ambient process first. Ctrl+C stops the automatic session and

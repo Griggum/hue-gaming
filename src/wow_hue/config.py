@@ -1,38 +1,19 @@
-import os
 import re
 from pathlib import Path
-from uuid import UUID
 
-import yaml
-from dotenv import dotenv_values
+from hue_core.config import UniqueLoader, credentials, load_mapping, normalize, read_yaml
 
-from .models import CHANNELS, AppConfig, Profile
+from .models import AppConfig, Profile
 
-
-class UniqueLoader(yaml.SafeLoader):
-    """Reject duplicate keys rather than silently discarding user configuration."""
-
-
-def unique_mapping(loader, node, deep=False):
-    result = {}
-    for key_node, value_node in node.value:
-        key = loader.construct_object(key_node, deep=deep)
-        if key in result:
-            raise ValueError(f"Duplicate YAML key: {key}")
-        result[key] = loader.construct_object(value_node, deep=deep)
-    return result
-
-
-UniqueLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, unique_mapping)
-
-
-def read_yaml(path: Path):
-    with path.open(encoding="utf-8-sig") as stream:
-        return yaml.load(stream, Loader=UniqueLoader)
-
-
-def normalize(value: str) -> str:
-    return re.sub(r"[\W_]+", " ", value.casefold()).strip()
+__all__ = [
+    "Catalog",
+    "UniqueLoader",
+    "credentials",
+    "load_config",
+    "load_mapping",
+    "normalize",
+    "read_yaml",
+]
 
 
 class Catalog:
@@ -65,25 +46,26 @@ class Catalog:
 
 def load_config(path: Path):
     config = AppConfig.model_validate(read_yaml(path))
-    catalog = Catalog(read_yaml(path.parent / config.profiles))
-    return config, catalog
+    if config.profile_cache:
+        import logging
 
+        from hue_core.catalog import Library
 
-def credentials(path: Path) -> tuple[str | None, str | None]:
-    values = dotenv_values(path, encoding="utf-8-sig", interpolate=False)
-    key = os.getenv("HUE_USERNAME") or values.get("HUE_USERNAME")
-    host = os.getenv("HUE_BRIDGE_IP") or values.get("HUE_BRIDGE_IP")
-    return key, host
+        from .library import wow_catalog
 
+        try:
+            candidate = wow_catalog(
+                Library.model_validate_json(
+                    (path.parent / config.profile_cache).read_text(encoding="utf-8")
+                )
+            )
+            # Validate against the local OCR registries before accepting a snapshot.
+            from .location_ocr import load_detection
 
-def load_mapping(path: Path, complete: bool = True) -> dict[str, str]:
-    raw = read_yaml(path) if path.exists() else {}
-    if not isinstance(raw, dict) or set(raw) - set(CHANNELS):
-        raise ValueError("Light mapping contains unknown logical channels")
-    if complete and set(raw) != set(CHANNELS):
-        raise ValueError("Map all five channels with `wow-hue map CHANNEL RESOURCE_ID` first")
-    for value in raw.values():
-        UUID(value)
-    if len(set(raw.values())) != len(raw):
-        raise ValueError("Each logical channel must use a different Hue light")
-    return raw
+            load_detection(path.parent / config.ocr, candidate)
+            return config, candidate
+        except (OSError, ValueError, KeyError, TypeError):
+            logging.getLogger(__name__).warning(
+                "Profile cache unavailable or incompatible; using bundled WoW profiles"
+            )
+    return config, Catalog(read_yaml(path.parent / config.profiles))

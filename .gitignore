@@ -19,3 +19,7 @@ config/unknown_locations.generated.yaml
 logs/
 debug/
 *.log
+
+data/
+config/profiles.cache.json
+portal.env

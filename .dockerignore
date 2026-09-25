@@ -1,0 +1,12 @@
+*
+!pyproject.toml
+!uv.lock
+!src/
+!src/**/
+!src/**/*.py
+!src/hue_portal/static/*.html
+!src/hue_portal/static/*.css
+!src/hue_portal/static/*.js
+!config/
+!config/library.seed.json
+**/__pycache__

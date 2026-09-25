@@ -1,5 +1,7 @@
 # Paths are resolved relative to this file.
 profiles: profiles.yaml
+# Optional local cache pulled from the Pi by hue-sync. Never contacts Pi during gameplay.
+profile_cache: profiles.cache.json
 lighting:
   brightness: 1.0
   intensity: 1.0
