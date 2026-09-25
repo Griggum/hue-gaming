@@ -3,7 +3,8 @@ name: Test, scan and publish Pi image
 on:
   pull_request:
   push:
-    branches: [master]
+    # Validate branch pushes too; only master/version tags can publish.
+    branches: ["**"]
     tags: ['v*']
   workflow_dispatch:
 
