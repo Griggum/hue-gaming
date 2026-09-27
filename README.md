@@ -28,10 +28,63 @@ uv run --no-sync wow-hue profile duskwood --dry-run --seed 42
 uv run --no-sync pytest
 ```
 
-`--dry-run` makes no network requests and prints the initial five targets.
-An ambient dry run also prints just the initial targets and exits.
-Configuration defaults to `config/app.yaml`; use `--config PATH` from another
-directory. Paths inside that file resolve relative to its directory.
+Manual profile `--dry-run` makes no network requests and prints the initial five
+targets. Paths inside configuration files resolve relative to their directory.
+
+## Shared game client
+
+```powershell
+uv run --no-sync hue-client --game valheim calibrate
+uv run --no-sync hue-client --game valheim ocr --duration 30
+uv run --no-sync hue-client --game valheim --insecure auto
+uv run --no-sync hue-client --game wow ocr --duration 30
+```
+
+`--game` selects the default configuration (`config/app.yaml` for WoW,
+`config/valheim.yaml` for Valheim). Use `--config PATH` before the command to
+override it. An explicit game must match the configuration. `wow-hue` and
+`valheim-hue` remain compatibility commands, and existing calibrations are reused.
+
+`hue-client` also accepts `validate`, `profiles`, `profile`, `ambient`, `map`,
+`lights`, and `discover`. The original `hue-client --game valheim Meadows`
+manual scene syntax still works; use `--scene NAME` if a scene/event name is a
+reserved command such as `auto`. `hue-game` exposes just the command interface.
+Run `hue-client --game valheim auto --help` for automatic lighting options.
+
+Shared capture lives in `hue_capture`, game adapters and commands in `hue_games`,
+and Hue/scene handling in `hue_core`. See [adding games](docs/GAME_ADAPTERS.md)
+for the package boundaries and extension workflow.
+
+## Valheim biome OCR
+
+Valheim uses the same local OCR and five-light ambient engine, with its own
+calibration and biome vocabulary. The nine biome scenes come from the shared
+library, preferring a compatible synchronized `config/profiles.cache.json` and
+falling back to `config/library.seed.json`.
+
+```powershell
+uv run --no-sync valheim-hue calibrate
+uv run --no-sync valheim-hue ocr --duration 30
+uv run --no-sync valheim-hue --insecure auto
+```
+
+For calibration, switch to Valheim within five seconds, then drag around the
+biome name at the top-right of the minimap in the still-image preview. Include
+space to the left for longer names such as Black Forest. Escape cancels.
+The selection is saved separately in ignored `config/valheim_ocr.local.yaml`.
+Recalibrate after changing resolution, UI scale, or minimap position.
+
+`ocr` and `auto --dry-run` never contact Hue. `auto` controls the shared five-light
+mapping; stop other ambient clients first. Omit `--insecure` when bridge TLS is
+configured in `config/valheim.yaml`. Three consecutive matches confirm a biome;
+blank or uncertain reads hold the current scene. Losing focus pauses capture and
+lighting updates. Ctrl+C stops the session and leaves the lights as they are.
+
+English labels are supplied; translated labels can be added in
+`config/valheim_aliases.yaml`. This detects only the visible biome label, without
+game mods or input automation. Weather, time of day, and interiors are not detected.
+Live validation on the running game recognized Meadows; other biome labels have
+matching tests but still need live font/background validation.
 
 ## Credentials and bridge
 

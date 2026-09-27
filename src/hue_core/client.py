@@ -13,8 +13,11 @@ from .hue import Bridge, BridgeError, Controller
 from .models import BridgeConfig, LightingConfig
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Direct-to-Hue client for shared game presets")
+def parser(add_help=True):
+    parser = argparse.ArgumentParser(
+        description="Direct-to-Hue scenes and game commands: calibrate, ocr, auto, profiles",
+        add_help=add_help,
+    )
     parser.add_argument("--cache", type=Path, default=Path("config/profiles.cache.json"))
     parser.add_argument("--lights", type=Path, default=Path("config/lights.yaml"))
     parser.add_argument("--env-file", type=Path, default=Path(".env"))
@@ -22,11 +25,25 @@ def main():
     parser.add_argument("--ca-file")
     parser.add_argument("--bridge-id", help="16-character Hue Bridge ID for TLS verification")
     parser.add_argument("--game", help="Resolve the name as an event within this game")
+    parser.add_argument("--config", type=Path, help="Configuration for game commands")
+    parser.add_argument("--bridge", help="Override the bridge's private LAN IP")
+    parser.add_argument("--scene", dest="explicit_scene", help="Explicit legacy scene/event name")
     parser.add_argument("--ambient", action="store_true")
     parser.add_argument("--brightness", type=float, default=1)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("scene", nargs="?", help="Scene ID, or event name with --game")
-    args = parser.parse_args()
+    return parser
+
+
+def main(argv=None):
+    command_parser = parser()
+    args = command_parser.parse_args(argv)
+    if args.config:
+        command_parser.error("--config applies to game commands")
+    if args.explicit_scene:
+        if args.scene:
+            command_parser.error("Use either a positional scene or --scene")
+        args.scene = args.explicit_scene
     try:
         library = Library.model_validate_json(args.cache.read_text(encoding="utf-8"))
         if not args.scene:
@@ -44,6 +61,7 @@ def main():
             print(json.dumps({c: asdict(t) for c, t in targets.items()}, indent=2))
             return 0
         token, host = credentials(args.env_file)
+        host = args.bridge or host
         if not token or not host:
             raise ValueError("Set HUE_USERNAME and HUE_BRIDGE_IP")
         bridge = Bridge(

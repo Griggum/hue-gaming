@@ -1,0 +1,12 @@
+# Paths resolve relative to this file. Light mapping and credentials are shared.
+game: valheim
+profiles: library.seed.json
+profile_cache: profiles.cache.json
+ocr: valheim_ocr.yaml
+lights: lights.yaml
+env_file: ../.env
+log_file: ../logs/valheim-hue.log
+lighting:
+  brightness: 1.0
+  intensity: 1.0
+  speed: 1.0

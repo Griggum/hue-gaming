@@ -1,0 +1,1 @@
+"""Shared gaming companion components."""

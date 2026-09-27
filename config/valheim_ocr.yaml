@@ -1,0 +1,9 @@
+aliases_file: valheim_aliases.yaml
+registry_files: []
+calibration_file: valheim_ocr.local.yaml
+process_names: [valheim.exe]
+samples_per_second: 3
+consecutive_reads: 3
+minimum_ocr_confidence: 0.65
+minimum_match_score: 0.84
+ambiguity_margin: 0.08

@@ -20,13 +20,15 @@ server = ["fastapi>=0.115,<1", "uvicorn>=0.34,<1"]
 
 [project.scripts]
 wow-hue = "wow_hue.main:main"
-hue-client = "hue_core.client:main"
+valheim-hue = "hue_games.cli:valheim_main"
+hue-game = "hue_games.cli:main"
+hue-client = "hue_games.client:main"
 hue-sync = "hue_core.sync:main"
 hue-import-wow = "wow_hue.library:main"
 hue-portal = "hue_portal.app:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/wow_hue", "src/hue_core", "src/hue_portal"]
+packages = ["src/wow_hue", "src/hue_core", "src/hue_portal", "src/hue_capture", "src/hue_games"]
 
 [dependency-groups]
 dev = [

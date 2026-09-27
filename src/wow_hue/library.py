@@ -3,6 +3,7 @@
 from pathlib import Path
 
 from hue_core.catalog import Library, atomic_write
+from hue_games.catalog import game_catalog
 
 
 def import_wow(raw: dict) -> Library:
@@ -28,24 +29,7 @@ def import_wow(raw: dict) -> Library:
 
 
 def wow_catalog(library: Library):
-    from wow_hue.config import Catalog
-
-    game = library.games.get("wow")
-    if not game or not game.events:
-        raise ValueError("The library has no WoW mappings")
-    return Catalog(
-        {
-            "locations": {
-                key: dict(
-                    **library.scenes[event.scene].model_dump(),
-                    names=event.names,
-                    map_ids=event.map_ids,
-                    type=event.category,
-                )
-                for key, event in game.events.items()
-            }
-        }
-    )
+    return game_catalog(library, "wow")
 
 
 def migrate(source: Path, destination: Path):
